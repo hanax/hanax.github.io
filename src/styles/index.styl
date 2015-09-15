@@ -1,0 +1,64 @@
+@import 'nib'
+@import './iconfont.css'
+
+*
+  box-sizing border-box
+
+body
+  font-size 16px
+  font-family Lato, sans-serif
+  padding-left 40%
+  min-width 1000px
+
+.icon-logo
+  font-size 90px
+  
+.left
+  fixed top 50% left 150px
+  transform translateY(-50%)
+
+.navi
+  font-weight 300
+  padding-top 15px
+  font-size 14px
+  letter-spacing 1.5px
+
+.contact
+  font-size 12px
+  padding-top 40px
+  letter-spacing 1px
+  ul
+    list-style-type none
+    padding-left 0
+  li
+    display inline
+    margin-right 15px
+  a
+    text-decoration none
+    color #000
+    
+  .icon-linkedin:hover
+    color #0077B5
+    transition all 0.3s ease
+  .icon-facebook:hover
+    color #3B5998
+    transition all 0.3s ease
+  .icon-instagram:hover
+    color #3F729B
+    transition all 0.3s ease
+  .icon-github:hover
+    color #4183C4
+    transition all 0.3s ease
+
+#arts
+  clearfix()
+  .art
+    float left
+    width 50%
+    height 240px
+    background-color #f0f0f0
+    -webkit-filter grayscale(100%)
+    &:hover
+      -webkit-filter grayscale(30%)
+      transition all 0.5s ease
+      cursor: zoom-in;
