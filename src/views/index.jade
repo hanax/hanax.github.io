@@ -6,25 +6,40 @@ html
 
     title Hannah Xue
 
-    meta(name='description' content='A stating point for building a static website in Jade, Stylus and ES6.')
+    meta(name='description' content='Hannah Xue portfolio site')
 
     link(rel='stylesheet' href='//brick.a.ssl.fastly.net/Lato:300,300i,400,400i,700')
+    link(rel='shortcut icon' href='/assets/favicon.png')
 
+    script(src='//code.jquery.com/jquery-2.1.4.min.js')
     script(src='/main.js')
+
 
   body
     .left
       .icon-logo
-      p.navi
-        span.tech Tech + Design
-        span.seprator  | 
-        span.art Art
+      .navi
+        a(href="#arts")
+          .item#art
+            span.icon-triangle
+            span.icon-triangle-f
+            span Art
+        a(href="#techs")
+          .item#tech
+            span.icon-square
+            span.icon-square-f
+            span Tech + Design
 
       .contact
         ul: each l in links
-          li: a(class=l.name href=l.url): span(class='icon-#{l.name}')
+          li: a(class=l.name href=l.url): span.icon(class='icon-#{l.name}')
         p About Hannah Xue
 
     #arts
       each a in arts
         .art(style='background-image: url(#{a.image})')
+
+    #techs
+      each t in techs
+        .tech(style='background-image: url(#{t.image})')
+          h1= t.name

@@ -31,6 +31,33 @@ var arts = [
     name: 'miaomiao',
     image: '/assets/arts/07.jpg',
   },
+  {
+    name: 'miaomiao',
+    image: '/assets/arts/08.jpg',
+  },
+  {
+    name: 'miaomiao',
+    image: '/assets/arts/09.jpg',
+  },
+];
+
+var techs = [
+  {
+    name: 'FYI: Find Your Instructor',
+    image: '/assets/techs/00.png'
+  },
+  {
+    name: 'FYI: Find Your Instructor',
+    image: '/assets/techs/00.png'
+  },
+  {
+    name: 'FYI: Find Your Instructor',
+    image: '/assets/techs/00.png'
+  },
+  {
+    name: 'FYI: Find Your Instructor',
+    image: '/assets/techs/00.png'
+  },
 ];
 
 var links = [
@@ -50,9 +77,10 @@ var links = [
     name: 'github',
     url: 'https://github.com/hanax',
   },
-]
+];
 
 module.exports = {
   arts: arts,
+  techs: techs,
   links: links,
 };

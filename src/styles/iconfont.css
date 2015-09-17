@@ -19,8 +19,20 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-logo:before {
+.icon-square-f:before {
 	content: "\e600";
+}
+.icon-square:before {
+	content: "\e601";
+}
+.icon-triangle-f:before {
+	content: "\e602";
+}
+.icon-triangle:before {
+	content: "\e603";
+}
+.icon-logo:before {
+	content: "\e604";
 }
 .icon-facebook:before {
 	content: "\f09a";
@@ -35,5 +47,5 @@
 	content: "\f16d";
 }
 .icon-email:before {
-	content: "\f1d9";
+	content: "\f1d8";
 }

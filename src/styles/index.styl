@@ -9,6 +9,7 @@ body
   font-family Lato, sans-serif
   padding-left 40%
   min-width 1000px
+  color rgb(50,50,50)
 
 .icon-logo
   font-size 90px
@@ -19,9 +20,32 @@ body
 
 .navi
   font-weight 300
-  padding-top 15px
-  font-size 14px
-  letter-spacing 1.5px
+  margin-top 40px
+  font-size 12px
+  letter-spacing 2px
+  a
+    text-decoration none
+    outline 0
+    color rgb(50,50,50)
+  .item:hover
+    font-weight 400
+  .item-bold
+    font-weight 400
+  #art
+    margin-bottom 5px
+  .icon-square,.icon-square-f
+    font-size 10px
+    padding-left 1px
+    padding-right 8px
+    color rgb(117,174,214)
+  .icon-square-f
+    display none
+  .icon-triangle,.icon-triangle-f
+    font-size 12px
+    padding-right 7px
+    color rgb(130,228,185)
+  .icon-triangle-f
+    display none
 
 .contact
   font-size 12px
@@ -35,20 +59,19 @@ body
     margin-right 15px
   a
     text-decoration none
-    color #000
+    color rgb(50,50,50)
+  
+  .icon
+    transition all 0.3s ease
     
   .icon-linkedin:hover
     color #0077B5
-    transition all 0.3s ease
   .icon-facebook:hover
     color #3B5998
-    transition all 0.3s ease
   .icon-instagram:hover
     color #3F729B
-    transition all 0.3s ease
   .icon-github:hover
     color #4183C4
-    transition all 0.3s ease
 
 #arts
   clearfix()
@@ -57,8 +80,36 @@ body
     width 50%
     height 240px
     background-color #f0f0f0
+    background-size 150%
     -webkit-filter grayscale(100%)
     &:hover
-      -webkit-filter grayscale(30%)
+      -webkit-filter grayscale(0%)
       transition all 0.5s ease
-      cursor: zoom-in;
+      cursor zoom-in
+      
+#techs
+  clearfix()
+  .tech
+    overflow hidden
+    float left
+    width 100%
+    height 300px
+    background-color #f0f0f0
+    display -webkit-box
+    //-webkit-box-pack center
+    -webkit-box-align center
+    padding-left 20px
+    -webkit-filter grayscale(100%)
+    &:hover
+      -webkit-filter grayscale(0%)
+      transition all 0.3s ease
+      cursor zoom-in
+      h1
+        text-shadow: 4px 0px #000;
+        transition all 0.3s ease
+    h1
+      font-size 100px
+      margin 0
+      color #fff
+      letter-spacing 1.5px
+
