@@ -3,6 +3,9 @@ import 'normalize-css';
 import '../styles/index.styl';
 
 $(() => {
+  var cw = $('.art .image').width();
+  $('.art .image').css({'height':cw+'px'});
+
   var art_offset = $('#arts').offset().top;
   var tech_offset = $('#techs').offset().top;
   var in_art = 0, in_tech = 0;
@@ -55,8 +58,7 @@ $(() => {
       $art.css('z-index','1000')
     })
     .on('click', '.image-fullscreen', function() {
-      $(this).css('z-index','-1');
-      $(this).fadeOut(250);
+      $(this).fadeOut(250, () => {$(this).css('z-index','-1')});
     });
 
   // Smooth Scrolling
