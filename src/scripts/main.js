@@ -61,6 +61,23 @@ $(() => {
       $(this).fadeOut(250, () => {$(this).css('z-index','-1')});
     });
 
+  const $techs = $('#techs');
+  $techs
+    .on('click', '.image', function() {
+      if ($(this).css('height') == '450px') {
+        $(this).addClass('small');
+        const $card = $(this).closest('.tech').find('.desc-card');
+        $card.animate({'height':$card.prop('scrollHeight')}, 'fast');
+      } else {
+        $(this).removeClass('small');
+        $(this).closest('.tech').find('.desc-card').animate({'height':'0'}, 'fast');
+      }
+    })
+    .on('click', '.desc-card', function() {
+      $(this).animate({'height':'0'}, 'fast');
+      $(this).closest('.tech').find('.image').removeClass('small');
+    });
+
   // Smooth Scrolling
   $(() => {
     $('a[href*=#]:not([href=#])').click(function() {
