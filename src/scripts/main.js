@@ -1,9 +1,8 @@
-import domready from 'domready';
 import 'normalize-css';
 
 import '../styles/index.styl';
 
-domready(() => {
+$(() => {
   var art_offset = $('#arts').offset().top;
   var tech_offset = $('#techs').offset().top;
   var in_art = 0, in_tech = 0;
@@ -47,6 +46,18 @@ domready(() => {
         $('.icon-triangle-f').toggle();
       }
   });
+
+  const $arts = $('#arts');
+  $arts
+    .on('click', '.image', function() {
+      const $art = $(this).closest('.art').find('.image-fullscreen');
+      $art.fadeIn(250);
+      $art.css('z-index','1000')
+    })
+    .on('click', '.image-fullscreen', function() {
+      $(this).css('z-index','-1');
+      $(this).fadeOut(250);
+    });
 
   // Smooth Scrolling
   $(() => {

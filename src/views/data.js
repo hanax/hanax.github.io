@@ -1,42 +1,42 @@
 var arts = [
   {
-    name: 'miaomiao',
+    name: 'Old portfolio page banner pic',
     image: '/assets/arts/00.jpg',
   },
   {
-    name: 'miaomiao',
+    name: 'stage curtain for Live For Life',
     image: '/assets/arts/01.jpg',
   },
   {
-    name: 'miaomiao',
+    name: 'EECS postcard winter collection',
     image: '/assets/arts/02.jpg',
   },
   {
-    name: 'miaomiao',
+    name: 'Ticket pic for Shanghai Comicon',
     image: '/assets/arts/03.jpg',
   },
   {
-    name: 'miaomiao',
+    name: 'How I kill my time',
     image: '/assets/arts/04.jpg',
   },
   {
-    name: 'miaomiao',
+    name: 'How I kill my time 2',
     image: '/assets/arts/05.jpg',
   },
   {
-    name: 'miaomiao',
+    name: 'Birthday card for friend',
     image: '/assets/arts/06.jpg',
   },
   {
-    name: 'miaomiao',
+    name: 'A recreation of Peking University library',
     image: '/assets/arts/07.jpg',
   },
   {
-    name: 'miaomiao',
+    name: 'Random',
     image: '/assets/arts/08.jpg',
   },
   {
-    name: 'miaomiao',
+    name: 'An old illustration',
     image: '/assets/arts/09.jpg',
   },
 ];
@@ -47,16 +47,16 @@ var techs = [
     image: '/assets/techs/00.png'
   },
   {
-    name: 'FYI: Find Your Instructor',
-    image: '/assets/techs/00.png'
+    name: 'Shake It',
+    image: '/assets/techs/01.png'
   },
   {
-    name: 'FYI: Find Your Instructor',
-    image: '/assets/techs/00.png'
+    name: 'Strata: Scalable 2D Barcode',
+    image: '/assets/techs/02.png'
   },
   {
-    name: 'FYI: Find Your Instructor',
-    image: '/assets/techs/00.png'
+    name: 'TeamGO',
+    image: '/assets/techs/03.png'
   },
 ];
 

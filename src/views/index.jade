@@ -37,7 +37,10 @@ html
 
     #arts
       each a in arts
-        .art(style='background-image: url(#{a.image})')
+        .art
+          .image(style='background-image: url(#{a.image})')
+          .image-fullscreen
+            img(src='#{a.image}')
 
     #techs
       each t in techs

@@ -76,16 +76,30 @@ body
 #arts
   clearfix()
   .art
-    float left
-    width 50%
-    height 240px
-    background-color #f0f0f0
-    background-size 150%
-    -webkit-filter grayscale(100%)
-    &:hover
-      -webkit-filter grayscale(0%)
-      transition all 0.5s ease
-      cursor zoom-in
+    .image
+      position relative
+      float left
+      width 50%
+      height 240px
+      background-color #f0f0f0
+      background-size 150%
+      background-position center
+      -webkit-filter grayscale(100%)
+      &:hover
+        -webkit-filter grayscale(0%)
+        transition all 0.5s ease
+        cursor zoom-in
+    .image-fullscreen
+      position relative
+      display none
+      background rgba(#fff, .9)
+      fixed top left
+      size 100%
+      cursor zoom-out
+      img
+        width image-width
+        absolute top 50% left 50%
+        transform translate(-50%, -50%)
       
 #techs
   clearfix()
