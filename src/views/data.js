@@ -63,7 +63,7 @@ var techs = [
   {
     name: 'Shake It',
     image: '/assets/techs/01.jpg',
-    desc: 'Shake It is a gesture based tinder style coupon recommendation app. It is a HTML5 mobile web app.'
+    desc: 'Shake It is a gesture based tinder style coupon recommendation web app.'
           + '\n\nThe app has a collaborative filtering recommendation system based on user actions including starring, sharing or ignoring the coupons.'
           + '![Screenshot1](/assets/techs/shakeit_0.jpg)'
           + '![Screenshot1](/assets/techs/shakeit_1.jpg)',
@@ -82,7 +82,9 @@ var techs = [
     image: '/assets/techs/03.jpg',
     desc: 'TeamGo is a popular mobile app in Peking University which enables students to team up and hang out with new friends.'
           + ' The initial UI was very complicated and I redesigned the entire interface to make it more intuitive.'
-          + '\n\n[Download the App](http://theteamgo.com/)',
+          + '\n\n[Download the App](http://theteamgo.com/)'
+          + '![Screenshot1](/assets/techs/teamgo_0.jpg)'
+          + '![Screenshot1](/assets/techs/teamgo_1.jpg)',
     color: '#22e7ba'
   },
   {

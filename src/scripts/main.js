@@ -64,7 +64,7 @@ $(() => {
   const $techs = $('#techs');
   $techs
     .on('click', '.image', function() {
-      if ($(this).css('height') == '450px') {
+      if (!$(this).hasClass('small')) {
         $(this).addClass('small');
         const $card = $(this).closest('.tech').find('.desc-card');
         $card.animate({'height':$card.prop('scrollHeight')}, 'fast');
