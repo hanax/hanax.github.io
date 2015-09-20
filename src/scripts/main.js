@@ -8,6 +8,7 @@ $(() => {
 
   var art_offset = $('#arts').offset().top;
   var tech_offset = $('#techs').offset().top;
+  var about_offset = $('#about').offset().top;
   var in_art = 0, in_tech = 0;
 
   $(window).on('scroll', () => {
@@ -16,23 +17,34 @@ $(() => {
       in_art = 1;
       $('.icon-triangle-f').show();
       $('.icon-triangle').hide();
-      $('.item#art').addClass('item-bold')
+      $('.item#art').addClass('item-bold');
     } else {
       in_art = 0;
       $('.icon-triangle-f').hide();
       $('.icon-triangle').show();
-      $('.item#art').removeClass('item-bold')
+      $('.item#art').removeClass('item-bold');
     }
-    if ( $(window).scrollTop() >= tech_offset) {
+    if ( $(window).scrollTop() >= tech_offset && 
+      $(window).scrollTop() < about_offset ) {
       in_tech = 1;
       $('.icon-square-f').show();
       $('.icon-square').hide();
-      $('.item#tech').addClass('item-bold')
+      $('.item#tech').addClass('item-bold');
     } else {
       in_tech = 0;
       $('.icon-square-f').hide();
       $('.icon-square').show();
-      $('.item#tech').removeClass('item-bold')
+      $('.item#tech').removeClass('item-bold');
+    }
+    if ( $(window).scrollTop() >= about_offset ) {
+      in_tech = 0;
+      in_art = 0;
+      $('.icon-square-f').hide();
+      $('.icon-square').show();
+      $('.icon-triangle-f').hide();
+      $('.icon-triangle').show();
+      $('.item#art').removeClass('item-bold');
+      $('.item#tech').removeClass('item-bold');
     }
   });
 

@@ -133,6 +133,11 @@ a
     background-size cover
     background-position center
     padding-left 40px
+    @media screen and (max-width: 900px)
+      -webkit-filter grayscale(0%)
+      -webkit-box-pack center
+    @media screen and (min-width: 900px)
+      -webkit-filter grayscale(100%)
     -webkit-filter grayscale(100%)
     display -webkit-box
     -webkit-box-align center
@@ -160,11 +165,11 @@ a
     background-color #f0f0f0
     background-size cover
     display -webkit-box
-    //-webkit-box-pack center
     -webkit-box-align center
     padding-left 40px
     @media screen and (max-width: 900px)
       -webkit-filter grayscale(0%)
+      -webkit-box-pack center
     @media screen and (min-width: 900px)
       -webkit-filter grayscale(100%)
     transition all 0.3s ease
@@ -175,6 +180,10 @@ a
         text-shadow 4px 0px #323232
         transition all 0.3s ease
     h1
+      @media screen and (max-width: 900px)
+        display block
+        text-align center
+        text-shadow 4px 0px #323232
       font-size 80px
       margin 0
       color #fff
@@ -184,14 +193,16 @@ a
     &:hover
       h1
         text-shadow 0 0
+    height 80px
     @media screen and (min-width: 900px)
-      height 80px
       background-size 120%
       background-position center right
       background-repeat no-repeat
-      h1
-        font-size 20px
-        letter-spacing 2px
+    h1
+      @media screen and (max-width: 900px)
+        display none
+      font-size 20px
+      letter-spacing 2px
   .desc-card
     text-align justify
     padding 0 40px 0 40px
@@ -203,6 +214,8 @@ a
     width 100%
     height 0
     cursor zoom-out
+    @media screen and (max-width: 900px)
+      font-size 35px
     img
       display block
       padding-top 30px
@@ -215,23 +228,53 @@ a
       color #fff
 
 #about
+  padding-top 80px
+  background-image url("/assets/about_pic.svg")
+  background-position bottom left
+  background-repeat no-repeat
   .title
-    font-size 25px
+    @media screen and (max-width: 900px)
+      font-size 80px
+    font-size 28px
   .btn
+    display inline
     border-style solid
     border-width 2px
     border-color rgb(60,60,60)
-    margin-left 30px
+    text-align center
     padding 6px 8px 6px 8px
-    letter-spacing 3px
+    letter-spacing 4px
     font-size 15px
     transition all 0.3s ease
+    @media screen and (max-width: 900px)
+      display block
+      width 100%
+      height 160px
+      border-width 4px
+      font-size 60px
+      padding-top 40px
     &:hover
       background-color rgb(60,60,60)
       color #fff
-  margin-top 50px
-  font-size 18px
+  .desc
+    @media screen and (max-width: 900px)
+      font-size 40px
+      padding-left 20px
+      padding-right 20px
+    margin-top 40px
+    padding-bottom 200px
+    @media screen and (max-width: 900px)
+      padding-bottom 150px
+    font-size 18px
   ul
-    list-style-type square
-  li 
-    margin-top 8px
+    margin-bottom 50px
+    @media screen and (max-width: 900px)
+      margin-bottom 150px
+  li
+    padding-left 6px
+    margin-top 10px
+  .triangle
+    list-style-image url('/assets/triangle.svg') 
+  .square
+    list-style-image url('/assets/square.svg') 
+      
