@@ -5,43 +5,28 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Group" sketch:type="MSLayerGroup">
-            <polygon id="Triangle-9" fill="#83C893" sketch:type="MSShapeGroup" points="25 0 50 32 0 32 "></polygon>
-            <polygon id="Triangle-9-Copy" fill="#75AED6" sketch:type="MSShapeGroup" points="74 0 99 32 49 32 "></polygon>
-            <polygon id="Triangle-9-Copy-2" fill="#FF6586" sketch:type="MSShapeGroup" points="124 0 149 32 99 32 "></polygon>
-            <polygon id="Triangle-9-Copy-5" fill="#83C893" sketch:type="MSShapeGroup" points="174 0 199 32 149 32 "></polygon>
-            <polygon id="Triangle-9-Copy-3" fill="#75AED6" sketch:type="MSShapeGroup" points="224 0 249 32 199 32 "></polygon>
-            <polygon id="Triangle-9-Copy-4" fill="#FF6586" sketch:type="MSShapeGroup" points="274 0 299 32 249 32 "></polygon>
-            <polygon id="Triangle-9-Copy-11" fill="#83C893" sketch:type="MSShapeGroup" points="324 0 349 32 299 32 "></polygon>
-            <polygon id="Triangle-9-Copy-6" fill="#75AED6" sketch:type="MSShapeGroup" points="374 0 399 32 349 32 "></polygon>
-            <polygon id="Triangle-9-Copy-7" fill="#FF6586" sketch:type="MSShapeGroup" points="424 0 449 32 399 32 "></polygon>
-            <polygon id="Triangle-9-Copy-8" fill="#83C893" sketch:type="MSShapeGroup" points="473 0 498 32 448 32 "></polygon>
-            <polygon id="Triangle-9-Copy-9" fill="#75AED6" sketch:type="MSShapeGroup" points="523 0 548 32 498 32 "></polygon>
-            <polygon id="Triangle-9-Copy-10" fill="#FF6586" sketch:type="MSShapeGroup" points="573 0 598 32 548 32 "></polygon>
-            <polygon id="Triangle-9-Copy-17" fill="#83C893" sketch:type="MSShapeGroup" points="623 0 648 32 598 32 "></polygon>
-            <polygon id="Triangle-9-Copy-12" fill="#75AED6" sketch:type="MSShapeGroup" points="669 0 694 32 644 32 "></polygon>
-            <polygon id="Triangle-9-Copy-13" fill="#FF6586" sketch:type="MSShapeGroup" points="719 0 744 32 694 32 "></polygon>
-            <polygon id="Triangle-9-Copy-14" fill="#83C893" sketch:type="MSShapeGroup" points="769 0 794 32 744 32 "></polygon>
-            <polygon id="Triangle-9-Copy-15" fill="#75AED6" sketch:type="MSShapeGroup" points="818 0 843 32 793 32 "></polygon>
-        </g>
-        <g id="Group-Copy" sketch:type="MSLayerGroup" transform="translate(0.000000, 9.000000)" fill="#FFFFFF">
-            <polygon id="Triangle-9" sketch:type="MSShapeGroup" points="25 0 50 32 0 32 "></polygon>
-            <polygon id="Triangle-9-Copy" sketch:type="MSShapeGroup" points="74 0 99 32 49 32 "></polygon>
-            <polygon id="Triangle-9-Copy-2" sketch:type="MSShapeGroup" points="124 0 149 32 99 32 "></polygon>
-            <polygon id="Triangle-9-Copy-5" sketch:type="MSShapeGroup" points="174 0 199 32 149 32 "></polygon>
-            <polygon id="Triangle-9-Copy-3" sketch:type="MSShapeGroup" points="224 0 249 32 199 32 "></polygon>
-            <polygon id="Triangle-9-Copy-4" sketch:type="MSShapeGroup" points="274 0 299 32 249 32 "></polygon>
-            <polygon id="Triangle-9-Copy-11" sketch:type="MSShapeGroup" points="324 0 349 32 299 32 "></polygon>
-            <polygon id="Triangle-9-Copy-6" sketch:type="MSShapeGroup" points="374 0 399 32 349 32 "></polygon>
-            <polygon id="Triangle-9-Copy-7" sketch:type="MSShapeGroup" points="424 0 449 32 399 32 "></polygon>
-            <polygon id="Triangle-9-Copy-8" sketch:type="MSShapeGroup" points="473 0 498 32 448 32 "></polygon>
-            <polygon id="Triangle-9-Copy-9" sketch:type="MSShapeGroup" points="523 0 548 32 498 32 "></polygon>
-            <polygon id="Triangle-9-Copy-10" sketch:type="MSShapeGroup" points="573 0 598 32 548 32 "></polygon>
-            <polygon id="Triangle-9-Copy-17" sketch:type="MSShapeGroup" points="623 0 648 32 598 32 "></polygon>
-            <polygon id="Triangle-9-Copy-12" sketch:type="MSShapeGroup" points="669 0 694 32 644 32 "></polygon>
-            <polygon id="Triangle-9-Copy-13" sketch:type="MSShapeGroup" points="719 0 744 32 694 32 "></polygon>
-            <polygon id="Triangle-9-Copy-14" sketch:type="MSShapeGroup" points="769 0 794 32 744 32 "></polygon>
-            <polygon id="Triangle-9-Copy-15" sketch:type="MSShapeGroup" points="818 0 843 32 793 32 "></polygon>
+        <g id="bottom_pic" sketch:type="MSLayerGroup">
+            <g id="Page-1" sketch:type="MSShapeGroup">
+                <g id="Group">
+                    <path d="M25,0 L50,32 L0,32 L25,0 Z" id="Triangle-9" fill="#83C893"></path>
+                    <path d="M74,0 L99,32 L49,32 L74,0 Z" id="Triangle-9-Copy" fill="#75AED6"></path>
+                    <path d="M124,0 L149,32 L99,32 L124,0 Z" id="Triangle-9-Copy-2" fill="#FF6586"></path>
+                    <path d="M174,0 L199,32 L149,32 L174,0 Z" id="Triangle-9-Copy-5" fill="#83C893"></path>
+                    <path d="M224,0 L249,32 L199,32 L224,0 Z" id="Triangle-9-Copy-3" fill="#75AED6"></path>
+                    <path d="M274,0 L299,32 L249,32 L274,0 Z" id="Triangle-9-Copy-4" fill="#FF6586"></path>
+                    <path d="M324,0 L349,32 L299,32 L324,0 Z" id="Triangle-9-Copy-11" fill="#83C893"></path>
+                    <path d="M374,0 L399,32 L349,32 L374,0 Z" id="Triangle-9-Copy-6" fill="#75AED6"></path>
+                    <path d="M424,0 L449,32 L399,32 L424,0 Z" id="Triangle-9-Copy-7" fill="#FF6586"></path>
+                    <path d="M473,0 L498,32 L448,32 L473,0 Z" id="Triangle-9-Copy-8" fill="#83C893"></path>
+                    <path d="M523,0 L548,32 L498,32 L523,0 Z" id="Triangle-9-Copy-9" fill="#75AED6"></path>
+                    <path d="M573,0 L598,32 L548,32 L573,0 Z" id="Triangle-9-Copy-10" fill="#FF6586"></path>
+                    <path d="M623,0 L648,32 L598,32 L623,0 Z" id="Triangle-9-Copy-17" fill="#83C893"></path>
+                    <path d="M669,0 L694,32 L644,32 L669,0 Z" id="Triangle-9-Copy-12" fill="#75AED6"></path>
+                    <path d="M719,0 L744,32 L694,32 L719,0 Z" id="Triangle-9-Copy-13" fill="#FF6586"></path>
+                    <path d="M769,0 L794,32 L744,32 L769,0 Z" id="Triangle-9-Copy-14" fill="#83C893"></path>
+                    <path d="M818,0 L843,32 L793,32 L818,0 Z" id="Triangle-9-Copy-15" fill="#75AED6"></path>
+                </g>
+            </g>
         </g>
     </g>
 </svg>
