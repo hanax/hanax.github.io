@@ -36,7 +36,10 @@ html
         ul: each l in links
           li: a(class=l.name href=l.url): span.icon(class='icon-#{l.name}')
         a(href='#about')
-          p About Hannah Xue
+          p.about-hx
+            span About Hannah Xue 
+            a(href='//scottcheng.com')
+              span.icon-heart
 
     .top
       .icon-logo

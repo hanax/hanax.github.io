@@ -67,6 +67,7 @@ var techs = [
     image: '/assets/techs/strolp.jpg',
     desc: 'Strolp tries to combine the best of both e-shopping and {physical shopping} and tries to strike a sweet balance which could be win-win for all the people involved. Selling in bulk has always been beneficial to the retailers. We often see a lot of deals on purchase of bulk quantity of goods rather than individual pieces. Tapping on this concept, with Strolp, retailers offer the best possible discounts when people visit them in numbers. Say brand X which generally sells its product for 100$ would sell it for 80$ if 10 people buy it in a group. This listing is made on Strolp. The shopper discovers such deals on the mobile application and indicates interest. Strolp takes the pain of finding other 9 people to avail the discount offered by brand X. As soon as there are enough number of people to avail the deal, a notification is sent to the shopper to visit the shop and make the purchase. This can be done in a group or individually. Say, you are new to the city or want to go shopping in a group to get some feedback, strolp has already found your friends!'
           + '\n\nStrolp consists of a web interface for stores and an iOS app for users. The entire application with fully functional front-end and back-end is developed within 36 hours for Big Red Hackathon. I was responsible for all the design and front-end development work. '
+          + '\n\nProject description credit to Shreyas.'
           + '\n\nPhoto of me from Cornell news presenting the demo of Strolp!'
           + '![Screenshot1](/assets/techs/strolp_news.jpg)'
           + '![Screenshot1](/assets/techs/strolp_m.png)'
@@ -154,6 +155,10 @@ var links = [
   {
     name: 'github',
     url: 'https://github.com/hanax',
+  },
+  {
+    name: 'email',
+    url: 'mailto:alfalfa.xue@gmail.com',
   },
 ];
 
