@@ -101,10 +101,17 @@ a
     color #FF6586
  
   .icon-heart
-    display none
+    opacity 0
+    margin-left 5px
+    transform translateX(-5px)
+    transition all 0.3s ease
     &:hover
       color #FF6586
-
+  .about-hx
+    &:hover
+      .icon-heart
+        opacity 1
+        transform translateX(0)
 #arts
   clearfix()
   .art
