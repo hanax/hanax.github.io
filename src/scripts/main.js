@@ -90,10 +90,6 @@ $(() => {
       $(this).closest('.tech').find('.image').removeClass('small');
     });
 
-  $('.about-hx').hover(() => {
-      $('.icon-heart').fadeToggle('fast');
-  });
-
 
   // Smooth Scrolling
   $(() => {

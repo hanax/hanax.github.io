@@ -18,6 +18,8 @@ a
   text-decoration none
   outline 0
   color rgb(60,60,60)
+  &, &:active, &:focus
+    outline none
 
 .icon-logo
   @media screen and (max-width: 900px)
@@ -99,10 +101,17 @@ a
     color #FF6586
  
   .icon-heart
-    display none
+    opacity 0
+    margin-left 5px
+    transform translateX(-5px)
+    transition all 0.3s ease
     &:hover
       color #FF6586
-
+  .about-hx
+    &:hover
+      .icon-heart
+        opacity 1
+        transform translateX(0)
 #arts
   clearfix()
   .art
@@ -155,7 +164,6 @@ a
       -webkit-filter grayscale(0%)
       h1
         text-shadow 4px 0px #323232
-        transition all 0.3s ease
     h1
       @media screen and (max-width: 900px)
         text-shadow 4px 0px #323232
@@ -163,6 +171,7 @@ a
       font-size 80px
       margin 0
       letter-spacing 1.5px
+      transition all 0.3s ease
       
 #techs
   clearfix()
@@ -189,7 +198,6 @@ a
       cursor zoom-in
       h1
         text-shadow 4px 0px #323232
-        transition all 0.3s ease
     h1
       @media screen and (max-width: 900px)
         text-shadow 4px 0px #323232
@@ -197,6 +205,7 @@ a
       margin 0
       color #fff
       letter-spacing 5px
+      transition all 0.3s ease
   .small
     -webkit-filter grayscale(0%)
     &:hover
