@@ -9,6 +9,7 @@ body
   font-family Lato, sans-serif
   //min-width 1000px
   color rgb(60,60,60)
+  background-color #fff
   @media screen and (max-width: 900px)
     padding-left 0
   @media screen and (min-width: 900px)
@@ -22,10 +23,7 @@ a
     outline none
 
 .icon-logo
-  @media screen and (max-width: 900px)
-    font-size 130px
-  @media screen and (min-width: 900px)
-    font-size 90px
+  font-size 90px
   
 .left
   fixed top 50% left 150px
@@ -36,8 +34,11 @@ a
     display block
 
 .top
-  text-align center
-  padding 200px 0 200px
+  position fixed
+  left 50%
+  transform translateX(-50%)
+  top 150px
+  z-index -1000
   @media screen and (max-width: 900px)
     display block
   @media screen and (min-width: 900px)
@@ -114,19 +115,19 @@ a
         transform translateX(0)
 #arts
   clearfix()
+  @media screen and (max-width: 900px)
+    margin-top 400px
   .art
     .image
       position relative
       float left
       width 50%
-      background-color #f0f0f0
       background-size cover
       background-position center
+      -webkit-filter grayscale(100%)
+      transition all 0.5s ease
       @media screen and (max-width: 900px)
         -webkit-filter grayscale(0%)
-      @media screen and (min-width: 900px)
-        -webkit-filter grayscale(100%)
-      transition all 0.5s ease
       &:hover
         -webkit-filter grayscale(0%)
         cursor zoom-in
@@ -153,7 +154,7 @@ a
     padding-left 40px
     @media screen and (max-width: 900px)
       -webkit-filter grayscale(0%)
-      -webkit-box-pack center
+      height 300px
     @media screen and (min-width: 900px)
       -webkit-filter grayscale(100%)
     -webkit-filter grayscale(100%)
@@ -165,13 +166,14 @@ a
       h1
         text-shadow 4px 0px #323232
     h1
-      @media screen and (max-width: 900px)
-        text-shadow 4px 0px #323232
       color #FF65AF
       font-size 80px
       margin 0
       letter-spacing 1.5px
       transition all 0.3s ease
+      @media screen and (max-width: 900px)
+        text-shadow 2px 0px #323232
+        font-size 40px
       
 #techs
   clearfix()
@@ -182,14 +184,13 @@ a
     float left
     width 100%
     height 450px
-    background-color #f0f0f0
     background-size cover
     display -webkit-box
     -webkit-box-align center
     padding-left 40px
     @media screen and (max-width: 900px)
       -webkit-filter grayscale(0%)
-      -webkit-box-pack center
+      height 300px
     @media screen and (min-width: 900px)
       -webkit-filter grayscale(100%)
     transition all 0.3s ease
@@ -199,13 +200,14 @@ a
       h1
         text-shadow 4px 0px #323232
     h1
-      @media screen and (max-width: 900px)
-        text-shadow 4px 0px #323232
       font-size 80px
       margin 0
       color #fff
       letter-spacing 5px
       transition all 0.3s ease
+      @media screen and (max-width: 900px)
+        text-shadow 2px 0px #323232
+        font-size 40px
   .small
     -webkit-filter grayscale(0%)
     &:hover
@@ -232,8 +234,6 @@ a
     width 100%
     height 0
     cursor zoom-out
-    @media screen and (max-width: 900px)
-      font-size 35px
     img
       display block
       padding-top 30px
@@ -246,11 +246,12 @@ a
       color #fff
 
 #about
-  padding-top 80px
+  padding-top 90px
+  background-color #fff
   //@media screen and (min-width: 900px)
     //background-image url("/assets/about_pic.svg")
-  background-position bottom left
-  background-repeat repeat-x
+  //background-position bottom left
+  //background-repeat repeat-x
   .avatar
     @media screen and (max-width: 900px)
       display none
@@ -268,8 +269,6 @@ a
       text-align center
       letter-spacing 2px
     .title
-      @media screen and (max-width: 900px)
-        font-size 80px
       font-size 32px
     .btn
       display block
@@ -284,32 +283,33 @@ a
       font-size 15px
       transition all 0.3s ease
       @media screen and (max-width: 900px)
-        width 80%
-        height 160px
-        border-width 4px
-        font-size 60px
-        padding-top 40px
-        margin auto
+        width 100%
+        background-color rgb(60,60,60)
+        color #fff
+        font-weight 300
+        height 60px
+        border-width 0
+        font-size 25px
+        padding-top 13px
+        margin 20px auto
       &:hover
         background-color rgb(60,60,60)
         color #fff
   .desc
-    @media screen and (max-width: 900px)
-      margin-top 40px
-      font-size 42px
-      padding-left 90px
-      padding-right 90px
     text-align justify
     margin-top 220px
-    padding-bottom 80px
+    padding-bottom 60px
     padding-right 20px
     font-size 18px
+    @media screen and (max-width: 900px)
+      padding-left 10px
+      padding-right 10px
+      margin-top 30px
+      padding-bottom 30px
   ul
     margin-left 0
     padding-left 20px
     margin-bottom 50px
-    @media screen and (max-width: 900px)
-      margin-bottom 150px
   li
     padding-left 6px
     margin-top 10px
