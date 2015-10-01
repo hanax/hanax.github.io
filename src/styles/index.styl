@@ -22,6 +22,26 @@ a
   &, &:active, &:focus
     outline none
 
+.overlay-logo
+  img
+    size 100%
+  width 90px
+  height 90px
+  background-color rgba(0,0,0,1)
+  //transition background 1s
+  &:after
+    content ''
+    width 90px
+    height 90px
+    background-image url('/assets/logo_b.png')
+    background-size 130%
+    background-position center
+    top 0
+    left 0
+    position absolute
+    display inline-block
+    z-index -100
+
 .icon-logo
   font-size 90px
   
@@ -248,6 +268,10 @@ a
 #about
   padding-top 90px
   background-color #fff
+  @media screen and (max-width: 900px)
+    padding-left 20px
+    padding-right 20px
+    padding-top 70px
   //@media screen and (min-width: 900px)
     //background-image url("/assets/about_pic.svg")
   //background-position bottom left
@@ -297,15 +321,17 @@ a
         color #fff
   .desc
     text-align justify
-    margin-top 220px
+    //margin-top 220px
+    clear both
+    padding-top 20px
     padding-bottom 60px
     padding-right 20px
     font-size 18px
     @media screen and (max-width: 900px)
+      padding-top 0
       padding-left 10px
       padding-right 10px
-      margin-top 30px
-      padding-bottom 30px
+      padding-bottom 20px
   ul
     margin-left 0
     padding-left 20px

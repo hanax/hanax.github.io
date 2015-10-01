@@ -14,6 +14,11 @@ $(() => {
   $(window).on('scroll', () => {
     if ( $(window).scrollTop() >= art_offset && 
       $(window).scrollTop() < tech_offset ) {
+      console.log($(window).scrollTop()/tech_offset)
+
+      // var tech_offset_ratio = $(window).scrollTop()/tech_offset;
+      // $('.overlay-logo').css('background-color', 'rgba(0,0,0,'+ Math.abs(1-2*tech_offset_ratio) +')');
+      
       in_art = 1;
       $('.icon-triangle-f').show();
       $('.icon-triangle').hide();
