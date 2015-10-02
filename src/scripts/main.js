@@ -14,7 +14,6 @@ $(() => {
   $(window).on('scroll', () => {
     if ( $(window).scrollTop() >= art_offset && 
       $(window).scrollTop() < tech_offset ) {
-      console.log($(window).scrollTop()/tech_offset)
 
       // var tech_offset_ratio = $(window).scrollTop()/tech_offset;
       // $('.overlay-logo').css('background-color', 'rgba(0,0,0,'+ Math.abs(1-2*tech_offset_ratio) +')');
@@ -80,7 +79,13 @@ $(() => {
 
   const $techs = $('#techs');
   $techs
-    .on('click', '.image', function() {
+    .on('click', '.image', function(e) {
+      // Scroll back to the top of the card
+      var cur_off = $(this).closest('.tech').find('.image').offset().top;
+      $('html, body').animate({
+        scrollTop: cur_off
+      }, 500);
+
       if (!$(this).hasClass('small')) {
         $(this).addClass('small');
         const $card = $(this).closest('.tech').find('.desc-card');
@@ -91,6 +96,13 @@ $(() => {
       }
     })
     .on('click', '.desc-card', function() {
+
+      // Scroll back to the top of the card
+      var cur_off = $(this).closest('.tech').find('.image').offset().top;
+      $('html, body').animate({
+        scrollTop: cur_off
+      }, 500);
+
       $(this).animate({'height':'0'}, 'fast');
       $(this).closest('.tech').find('.image').removeClass('small');
     });

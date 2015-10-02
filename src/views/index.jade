@@ -60,10 +60,14 @@ html
     #techs
       each t in techs
         .tech
-          .image(style='background-image: url(#{t.image});background-color: #{t.color};')
+          .image(style='background-image: url(#{t.image});')
             h1= t.name
-          .desc-card(style='background-color: #{t.color};')
-            p!= t.desc
+          .desc-card
+            .content
+              .tags
+                .type(style='border-left-color: #{t.color};')= t.type
+                .role(style='border-left-color: #{t.color};')= t.role
+              p!= t.desc
 
     #about
       .avatar

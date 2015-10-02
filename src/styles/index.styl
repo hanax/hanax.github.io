@@ -13,7 +13,7 @@ body
   @media screen and (max-width: 900px)
     padding-left 0
   @media screen and (min-width: 900px)
-    padding-left 40%
+    padding-left 35%
 
 a
   text-decoration none
@@ -230,40 +230,53 @@ a
         font-size 40px
   .small
     -webkit-filter grayscale(0%)
+    height 80px
     &:hover
       h1
         text-shadow 0 0
-    height 80px
-    @media screen and (min-width: 900px)
-      background-size 120%
-      background-position center right
-      background-repeat no-repeat
     h1
       @media screen and (max-width: 900px)
         display none
       font-size 20px
       letter-spacing 2px
   .desc-card
+    background-color #fff
     text-align justify
-    padding 0 40px 0 40px
-    font-weight 300
+    padding 0 40px
+    font-weight 400
+    font-size 18px
     letter-spacing 0.8px
-    color #fff
     overflow hidden
     float left
     width 100%
     height 0
     cursor zoom-out
-    img
-      display block
-      padding-top 30px
-      size 100%
-    p
-      margin-top 20px
-      margin-bottom 40px
-    a
-      font-style italic
-      color #fff
+    .content
+      padding 40px 0
+      .tags
+        padding-bottom 15px
+        font-style italic
+        color rgb(100,100,100)
+      .type
+        display block
+        padding 0 10px
+        border-left 4px solid #000 
+      .role
+        display block
+        margin-top 20px
+        padding 0 10px
+        border-left 4px solid #000 
+      img
+        // &:nth-child(odd)
+        //   float left
+        // &:nth-child(even)
+        //   float right
+        padding-top 30px
+        size 100%
+      p
+        text-align left
+      a
+        border-bottom 1px dashed rgb(60,60,60)
 
 #about
   padding-top 90px
@@ -301,7 +314,7 @@ a
       border-width 2px
       border-color rgb(60,60,60)
       text-align center
-      padding 6px 8px 6px 8px
+      padding 6px 8px
       margin-top 20px
       letter-spacing 4px
       font-size 15px
