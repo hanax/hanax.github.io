@@ -28,7 +28,7 @@ a
   width 90px
   height 90px
   background-color rgba(0,0,0,1)
-  //transition background 1s
+  transition background .5s
   &:after
     content ''
     width 90px
@@ -158,7 +158,7 @@ a
       size 100%
       cursor zoom-out
       img
-        width 600px
+        width 700px
         @media screen and (max-width: 900px)
           width 100%
         absolute top 50% left 50%
@@ -254,9 +254,9 @@ a
     .content
       padding 40px 0
       .tags
-        padding-bottom 15px
         font-style italic
         color rgb(100,100,100)
+        margin-bottom 25px
       .type
         display block
         padding 0 10px
@@ -266,17 +266,36 @@ a
         margin-top 20px
         padding 0 10px
         border-left 4px solid #000 
-      img
-        // &:nth-child(odd)
-        //   float left
-        // &:nth-child(even)
-        //   float right
-        padding-top 30px
-        size 100%
       p
+        clearfix()
         text-align left
       a
         border-bottom 1px dashed rgb(60,60,60)
+      img
+        size 100%
+        margin 20px 0
+      .blocks
+        margin-top 25px
+        font-size 20px
+      .block-mock
+        display block
+        overflow auto
+        margin-bottom 20px
+        &:nth-child(odd)
+          .pic
+            size 50%
+            float left
+            margin-right 20px
+        &:nth-child(even)
+          .pic
+            size 50%
+            float right
+            margin-left 20px
+        .text
+          float left
+          width 45%
+          padding-top 5%
+          text-align center
 
 #about
   padding-top 90px

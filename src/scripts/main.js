@@ -14,15 +14,13 @@ $(() => {
   $(window).on('scroll', () => {
     if ( $(window).scrollTop() >= art_offset && 
       $(window).scrollTop() < tech_offset ) {
-
-      // var tech_offset_ratio = $(window).scrollTop()/tech_offset;
-      // $('.overlay-logo').css('background-color', 'rgba(0,0,0,'+ Math.abs(1-2*tech_offset_ratio) +')');
       
       in_art = 1;
       $('.icon-triangle-f').show();
       $('.icon-triangle').hide();
       $('.item#art').addClass('item-bold');
     } else {
+
       in_art = 0;
       $('.icon-triangle-f').hide();
       $('.icon-triangle').show();
@@ -30,25 +28,33 @@ $(() => {
     }
     if ( $(window).scrollTop() >= tech_offset && 
       $(window).scrollTop() < about_offset ) {
+
       in_tech = 1;
       $('.icon-square-f').show();
       $('.icon-square').hide();
       $('.item#tech').addClass('item-bold');
     } else {
+
       in_tech = 0;
       $('.icon-square-f').hide();
       $('.icon-square').show();
       $('.item#tech').removeClass('item-bold');
     }
     if ( $(window).scrollTop() >= about_offset ) {
+
       in_tech = 0;
       in_art = 0;
+
+      $('.overlay-logo').css('background-color', 'rgba(0,0,0,.1)');
+
       $('.icon-square-f').hide();
       $('.icon-square').show();
       $('.icon-triangle-f').hide();
       $('.icon-triangle').show();
       $('.item#art').removeClass('item-bold');
       $('.item#tech').removeClass('item-bold');
+    } else {
+      $('.overlay-logo').css('background-color', 'rgba(0,0,0,1)');
     }
   });
 
@@ -80,6 +86,7 @@ $(() => {
   const $techs = $('#techs');
   $techs
     .on('click', '.image', function(e) {
+
       // Scroll back to the top of the card
       var cur_off = $(this).closest('.tech').find('.image').offset().top;
       $('html, body').animate({
@@ -87,10 +94,12 @@ $(() => {
       }, 500);
 
       if (!$(this).hasClass('small')) {
+
         $(this).addClass('small');
         const $card = $(this).closest('.tech').find('.desc-card');
         $card.animate({'height':$card.prop('scrollHeight')}, 'fast');
       } else {
+
         $(this).removeClass('small');
         $(this).closest('.tech').find('.desc-card').animate({'height':'0'}, 'fast');
       }

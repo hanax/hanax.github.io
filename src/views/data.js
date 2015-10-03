@@ -58,10 +58,24 @@ var techs = [
     image: '/assets/techs/01.jpg',
     type: 'Mobile web app design and development',
     role: 'Individual project (Node.js, MongoDB, Python)',
-    desc: 'Shake It is a gesture based tinder style coupon recommendation web app'
-          + '\n\nThe app has a collaborative filtering recommendation system based on user actions including starring, sharing or ignoring the coupons.'
-          + '![Screenshot1](/assets/techs/shakeit_0.png)'
-          + '![Screenshot1](/assets/techs/shakeit_1.png)',
+    desc: 'Shake It is a gesture based tinder style coupon recommendation web app.',
+    blocks: [
+      {
+        image: '/assets/techs/shakeit_0.png',
+        desc: 'Simply shake your phone to get latest coupons!'
+              + '\n\nAll the recommendations are customized using collaborative filtering based on user actions.'
+      },
+      {
+        image: '/assets/techs/shakeit_1.png',
+        desc: 'For every coupon you get, swipe left/right to ignore/star it.'
+              + '\n\nSharing to social networks is (of course) supported.'
+              + '\n\nEvery action counts. The system can therefore give better recommendations.'
+      },
+      {
+        image: '/assets/techs/shakeit_2.png',
+        desc: 'View, order and share your coupons.'
+      }
+    ],
     color: '#22b2e7'
   },
   {
@@ -69,13 +83,39 @@ var techs = [
     image: '/assets/techs/strolp.jpg',
     type: 'Web app design and development',
     role: 'Front-end developer (Meteor.js), designer',
-    desc: 'Strolp tries to combine the best of both e-shopping and {physical shopping} and tries to strike a sweet balance which could be win-win for all the people involved. Selling in bulk has always been beneficial to the retailers. We often see a lot of deals on purchase of bulk quantity of goods rather than individual pieces. Tapping on this concept, with Strolp, retailers offer the best possible discounts when people visit them in numbers. Say brand X which generally sells its product for 100$ would sell it for 80$ if 10 people buy it in a group. This listing is made on Strolp. The shopper discovers such deals on the mobile application and indicates interest. Strolp takes the pain of finding other 9 people to avail the discount offered by brand X. As soon as there are enough number of people to avail the deal, a notification is sent to the shopper to visit the shop and make the purchase. This can be done in a group or individually. Say, you are new to the city or want to go shopping in a group to get some feedback, strolp has already found your friends!'
+    desc: ''
           + '\n\nStrolp consists of a web interface for stores and an iOS app for users. The entire application with fully functional front-end and back-end is developed within 36 hours for Big Red Hackathon.'
           + '\n\nProject description credit to my teammate Shreyas Kulkarni.'
-          + '\n\n[Learn more about the App](http://devpost.com/software/strolp-bnco6t/)'
-          + '\n\nPhoto of me from Cornell news presenting the demo of Strolp!'
-          + '![Screenshot1](/assets/techs/strolp_news.jpg)'
-          + '![Screenshot1](/assets/techs/strolp_m.png)',
+          + '\n\n[Learn more about the App](http://devpost.com/software/strolp-bnco6t/)',
+    blocks: [
+      {
+        image: '/assets/techs/strolp_0.png',
+        desc: 'Strolp tries to combine the best of both e-shopping and physical shopping and tries to strike a sweet balance which could be win-win for all the people involved.'
+      },
+      {
+        image: '/assets/techs/strolp_1.png',
+        desc: 'The shopper discovers the deals nearby on the go.'
+      },
+      {
+        image: '/assets/techs/strolp_2.png',
+        desc: 'The shopper can claim a deal. As soon as there are enough number of people to avail the deal, a notification is sent to the shopper to visit the shop and make the purchase.'
+      },
+      {
+        image: '/assets/techs/strolp_3.png',
+        desc: 'On the retailer side, they can add branches and deals for each branch. With Strolp, they offer the best possible discounts when people visit them in numbers.'
+      },
+      {
+        image: '/assets/techs/strolp_4.png',
+        desc: 'Strolp also tries to optimize the deals for the retailers using our algorithm which generates dynamic deals based on various factors like demographics of the region etc.'
+      },
+      {
+        image: '/assets/techs/strolp_news.jpg',
+        desc: 'A photo of me presenting the demo is featured on Cornell News! We actually received some really good feedbacks:'
+              + '\n\n \"Strolp is the most complete app in the entire hackathon.\"'
+              + '\n\n \"I wish I could use it now.\"'
+              + '\n\n \"Just love the logo!\"'
+      }
+    ],
     color: '#e89a1e'
   },
   {
@@ -152,6 +192,8 @@ var techs = [
   },
 ].map(function(p) {
   p.desc = marked(p.desc);
+  if (p.blocks)
+    p.blocks = p.blocks.map(function(b) { b.desc = marked(b.desc); return b;});
   return p;
 });
 

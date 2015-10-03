@@ -68,6 +68,12 @@ html
                 .type(style='border-left-color: #{t.color};')= t.type
                 .role(style='border-left-color: #{t.color};')= t.role
               p!= t.desc
+              .blocks
+                if t.blocks
+                  each b in t.blocks
+                    .block-mock
+                      .pic: img(src='#{b.image}')
+                      .text: p!= b.desc
 
     #about
       .avatar
