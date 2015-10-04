@@ -22,6 +22,12 @@ a
   &, &:active, &:focus
     outline none
 
+@-webkit-keyframes MOVE-BG
+  0%
+    background-position 0
+  100%
+    background-position 150px
+
 .overlay-logo
   img
     size 100%
@@ -33,14 +39,13 @@ a
     content ''
     width 90px
     height 90px
-    background-image url('/assets/logo_b.png')
-    background-size 130%
-    background-position center
+    background url('/assets/logo_b.png') 0% 0% repeat-x
     top 0
     left 0
     position absolute
     display inline-block
     z-index -100
+    animation MOVE-BG 7s linear infinite
 
 .icon-logo
   font-size 90px

@@ -45,7 +45,7 @@ $(() => {
       in_tech = 0;
       in_art = 0;
 
-      $('.overlay-logo').css('background-color', 'rgba(0,0,0,.1)');
+      $('.overlay-logo').css('background-color', 'rgba(0,0,0,0)');
 
       $('.icon-square-f').hide();
       $('.icon-square').show();
