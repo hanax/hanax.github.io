@@ -12,6 +12,8 @@ $(() => {
   var in_art = 0, in_tech = 0;
 
   $(window).on('scroll', () => {
+    about_offset = $('#about').offset().top;
+
     if ( $(window).scrollTop() >= art_offset && 
       $(window).scrollTop() < tech_offset ) {
       

@@ -202,10 +202,10 @@ var links = [
     name: 'linkedin',
     url: 'https://www.linkedin.com/pub/hannah-xue/83/ba/6a5',
   },
-  {
-    name: 'facebook',
-    url: 'https://www.facebook.com/yqing.xue',
-  },
+  // {
+  //   name: 'facebook',
+  //   url: 'https://www.facebook.com/yqing.xue',
+  // },
   {
     name: 'instagram',
     url: 'https://instagram.com/hanaxue',
