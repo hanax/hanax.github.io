@@ -42,7 +42,9 @@ $(() => {
       $('.icon-square').show();
       $('.item#tech').removeClass('item-bold');
     }
-    if ( $(window).scrollTop() >= about_offset ) {
+
+    if ($(window).scrollTop() >= about_offset 
+        || $(window).scrollTop() == $(document).height() - $(window).height()) {
 
       in_tech = 0;
       in_art = 0;
