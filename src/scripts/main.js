@@ -1,79 +1,41 @@
 import 'normalize-css';
-
 import '../styles/index.styl';
 
 $(() => {
-  var cw = $('.art .image').width();
-  $('.art .image').css({'height':cw+'px'});
+  var my$ = function(targetSelector) {
+    return document.querySelector(targetSelector);
+  }
 
-  var art_offset = $('#arts').offset().top;
-  var tech_offset = $('#techs').offset().top;
-  var about_offset = $('#about').offset().top;
-  var in_art = 0, in_tech = 0;
+  Array.prototype.forEach.call(
+    document.querySelectorAll('.art .image'), 
+    (el) => { el.style.height = getComputedStyle(el)['width'] }
+  );
 
-  $(window).on('scroll', () => {
-    about_offset = $('#about').offset().top;
 
-    if ( $(window).scrollTop() >= art_offset && 
-      $(window).scrollTop() < tech_offset ) {
-      
-      in_art = 1;
-      $('.icon-triangle-f').show();
-      $('.icon-triangle').hide();
-      $('.item#art').addClass('item-bold');
-    } else {
+  var artOffset = my$('#arts').offsetTop;
+  var techOffset = my$('#techs').offsetTop;
 
-      in_art = 0;
-      $('.icon-triangle-f').hide();
-      $('.icon-triangle').show();
-      $('.item#art').removeClass('item-bold');
-    }
-    if ( $(window).scrollTop() >= tech_offset && 
-      $(window).scrollTop() < about_offset ) {
+  window.addEventListener('scroll', () => {
+    var aboutOffset = my$('#about').offsetTop;
 
-      in_tech = 1;
-      $('.icon-square-f').show();
-      $('.icon-square').hide();
-      $('.item#tech').addClass('item-bold');
-    } else {
-
-      in_tech = 0;
-      $('.icon-square-f').hide();
-      $('.icon-square').show();
-      $('.item#tech').removeClass('item-bold');
+    if ( document.body.scrollTop >= techOffset
+      && document.body.scrollTop < aboutOffset ) {
+      my$('.item#art').classList.remove('active');
+      my$('.item#tech').classList.add('active');
+    } else if ( document.body.scrollTop >= artOffset
+      && document.body.scrollTop < techOffset ) {
+      my$('.item#art').classList.add('active');
+      my$('.item#tech').classList.remove('active');
     }
 
-    if ($(window).scrollTop() >= about_offset 
-        || $(window).scrollTop() == $(document).height() - $(window).height()) {
-
-      in_tech = 0;
-      in_art = 0;
-
-      $('.overlay-logo').css('background-color', 'rgba(0,0,0,0)');
-
-      $('.icon-square-f').hide();
-      $('.icon-square').show();
-      $('.icon-triangle-f').hide();
-      $('.icon-triangle').show();
-      $('.item#art').removeClass('item-bold');
-      $('.item#tech').removeClass('item-bold');
+    if (document.body.scrollTop == document.body.clientHeight - window.innerHeight
+      || document.body.scrollTop >= aboutOffset) {
+      my$('.overlay-logo').classList.add('active');
+      my$('.item#art').classList.remove('active');
+      my$('.item#tech').classList.remove('active');
     } else {
-      $('.overlay-logo').css('background-color', 'rgba(0,0,0,1)');
+      my$('.overlay-logo').classList.remove('active');
     }
-  });
-
-  $('.item#tech').hover(() => {
-      if(!in_tech){
-        $('.icon-square').toggle();
-        $('.icon-square-f').toggle();
-      } 
-  });
-
-  $('.item#art').hover(() => {
-      if(!in_art){
-        $('.icon-triangle').toggle();
-        $('.icon-triangle-f').toggle();
-      }
   });
 
   const $arts = $('#arts');

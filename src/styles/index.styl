@@ -46,6 +46,8 @@ a
     display inline-block
     z-index -100
     animation MOVE-BG 7s linear infinite
+  &.active
+    background-color rgba(0,0,0,0)
 
 .icon-logo
   font-size 90px
@@ -77,12 +79,16 @@ a
   letter-spacing 2px
   .item
     -webkit-filter grayscale(100%)
-  .item:hover
-    font-weight 400
-    -webkit-filter grayscale(0%)
-  .item-bold
-    font-weight 400
-    -webkit-filter grayscale(0%)
+    &:hover
+      font-weight 400
+      -webkit-filter grayscale(0%)
+    &.active, &:hover
+      font-weight 400
+      -webkit-filter grayscale(0%)
+      .icon-filled
+        display inline
+      .icon
+        display none
   #art
     margin-bottom 5px
   .icon-square,.icon-square-f
@@ -90,13 +96,11 @@ a
     padding-left 1px
     padding-right 8px
     color rgb(117,174,214)
-  .icon-square-f
-    display none
   .icon-triangle,.icon-triangle-f
     font-size 12px
     padding-right 7px
     color rgb(130,228,185)
-  .icon-triangle-f
+  .icon-filled
     display none
 
 .contact
