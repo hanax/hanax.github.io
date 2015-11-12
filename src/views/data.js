@@ -123,7 +123,7 @@ var techs = [
     type: 'Mobile/HCI Research',
     role: 'Paper co-author, prototyper (OpenCV)',
     image: '/assets/techs/02.jpg',
-    desc: 'Strata is a novel scalable 2D barcode design. In this project we try to explore the way people interact with barcods. '
+    desc: 'Strata is a novel scalable 2D barcode design. In this project we try to explore the way people interact with barcodes. '
           + 'When scanning Strata barcode, instead of the all-or-nothing behavior of traditional QR Code, user could now get different layers of information based on their distance between the scanning device and the barcode.'
           + '\n\nThis project is a collaborative work with [MSRA](http://research.microsoft.com/en-us/labs/asia/) and [Yale University](http://www.yale.edu) and is accepted to [ACM MobiCom 2014](http://www.sigmobile.org/mobicom/2014/).'
           + '\n\n[Read Paper](/assets/strata.pdf)',
@@ -181,7 +181,7 @@ var techs = [
   },
   {
     name: 'Old homepage from 2005',
-    type: '(Old style) Web development',
+    type: '(Old fashioned) Web development',
     role: 'Individual project (HTML, CSS, ASP)',
     image: '/assets/techs/06.jpg',
     desc: 'I made my first homepage flylinda.com from scratch when I was 12. That little site provided free tutorials for web designers and charged services as well so that I could afford the server rent myself. Flylinda.com once reached a daily IP of 2000.'
