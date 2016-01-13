@@ -10,13 +10,17 @@ var arts = [
     image: '/assets/arts/01.jpg',
   },
   {
+    name: 'Illustration explorations',
+    image: '/assets/arts/animals.jpg',
+  },
+  {
     name: 'EECS postcard winter collection',
     image: '/assets/arts/02.jpg',
   },
-  {
-    name: 'Ticket pic for Shanghai Comicon',
-    image: '/assets/arts/03.jpg',
-  },
+  // {
+  //   name: 'Ticket pic for Shanghai Comicon',
+  //   image: '/assets/arts/03.jpg',
+  // },
   {
     name: 'A recreation of Peking University library',
     image: '/assets/arts/04.jpg',
@@ -37,22 +41,50 @@ var arts = [
   {
     image: '/assets/arts/10.jpg'
   },
-  {
-    image: '/assets/arts/11.jpg'
-  },
-  {
-    image: '/assets/arts/12.jpg'
-  },
-  {
-    name: 'Self portrait',
-    image: '/assets/arts/06.png',
-  },
-  {
-    image: '/assets/arts/13.jpg'
-  },
+  // {
+  //   image: '/assets/arts/11.jpg'
+  // },
+  // {
+  //   image: '/assets/arts/12.jpg'
+  // },
+  // {
+  //   name: 'Self portrait',
+  //   image: '/assets/arts/06.png',
+  // },
+  // {
+  //   image: '/assets/arts/13.jpg'
+  // },
 ];
 
 var techs = [
+  {
+    name: 'BriskIT',
+    image: '/assets/techs/briskit.jpg',
+    type: 'Web app design and development',
+    role: 'Web developer (React), designer',
+    desc: 'BriskIT comes with an iOS app that allows users to get IT help whenever and wherever their tech breaks down. On the supporter side they could use the website to provide live support.'
+          + '\n\n[Project Git Repository](https://github.com/hanax/BriskIT)'
+          + '\n\n[Live Demo](https://briskit.herokuapp.com)',
+    blocks: [
+      {
+        image: '/assets/techs/briskit_0.png',
+        desc: 'The web app is designed for IT helpers. Simply sign up your account and get quick money by fixing IT issues.'
+      },
+      {
+        image: '/assets/techs/briskit_1.png',
+        desc: 'Browse and filter the ticket by tags, and easily find the one best fit your skillset.'
+      },
+      {
+        image: '/assets/techs/briskit_2.png',
+        desc: 'Get the ticket and just start chatting!'
+      },
+      {
+        image: '/assets/techs/briskit_ios_app.png',
+        desc: 'On the corresponding iOS app, you can send a ticket about your IT issues and just sit and wait for your help to come.'
+      }
+    ],
+    color: '#30c0cc'
+  },
   {
     name: 'Shake It',
     image: '/assets/techs/01.jpg',
@@ -86,7 +118,8 @@ var techs = [
     desc: ''
           + '\n\nStrolp consists of a web interface for stores and an iOS app for users. The entire application with fully functional front-end and back-end is developed within 36 hours for Big Red Hackathon.'
           + '\n\nProject description credit to my teammate Shreyas Kulkarni.'
-          + '\n\n[Learn more about the App](http://devpost.com/software/strolp-bnco6t/)',
+          + '\n\n[Learn more about the App](http://devpost.com/software/strolp-bnco6t/)'
+          + '\n\n[Project Git Repository](https://github.com/redenter/Big-Red-Hacks/)',
     blocks: [
       {
         image: '/assets/techs/strolp_0.png',
