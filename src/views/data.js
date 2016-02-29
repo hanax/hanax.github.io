@@ -10,24 +10,27 @@ var arts = [
     image: '/assets/arts/01.jpg',
   },
   {
-    name: 'Illustration explorations',
-    image: '/assets/arts/animals.jpg',
-  },
-  {
     name: 'EECS postcard winter collection',
     image: '/assets/arts/02.jpg',
   },
-  // {
-  //   name: 'Ticket pic for Shanghai Comicon',
-  //   image: '/assets/arts/03.jpg',
-  // },
   {
     name: 'A recreation of Peking University library',
     image: '/assets/arts/04.jpg',
   },
   {
-    name: 'Starry night',
-    image: '/assets/arts/05.jpg',
+    name: 'Illustration explorations',
+    image: '/assets/arts/animals_0.jpg',
+  },
+  {
+    name: 'Illustration explorations',
+    image: '/assets/arts/animals_1.jpg',
+  },
+  {
+    name: 'Illustration explorations',
+    image: '/assets/arts/animals_2.jpg',
+  },
+  {
+    image: '/assets/arts/13.jpg',
   },
   {
     image: '/assets/arts/07.jpg'
@@ -41,22 +44,31 @@ var arts = [
   {
     image: '/assets/arts/10.jpg'
   },
-  // {
-  //   image: '/assets/arts/11.jpg'
-  // },
-  // {
-  //   image: '/assets/arts/12.jpg'
-  // },
-  // {
-  //   name: 'Self portrait',
-  //   image: '/assets/arts/06.png',
-  // },
-  // {
-  //   image: '/assets/arts/13.jpg'
-  // },
+  {
+    link: 'http://hanax.github.io/p5js_demos/demo_wp',
+    image: '/assets/arts/pollock.jpg'
+  },
+  {
+    link: 'http://hanax.github.io/p5js_demos/demo_mouse',
+    image: '/assets/arts/heart.jpg'
+  },
 ];
 
 var techs = [
+  {
+    name: 'Freelance dev+design work',
+    type: 'Web design and development',
+    role: 'Developer, designer',
+    image: '/assets/techs/web_freelance.jpg',
+    desc: 'I designed and made websites for professors and labs in Cornell Tech as a paid part-time job.'
+          + '\n\n [Prof Mor Naaman\'s homepage](http://mornaaman.com)'
+          + '![mor](/assets/techs/mor_mock.png)'
+          + '(not-so-)fun fact: I made nine designs for the websites and ended up with the simplest one:'
+          + '![mor](/assets/techs/mor_mock_extra.png)'
+          + '\n\n [Website for Social Technology Lab](http://stech.nyc) (made with Huai-Che Lu and [Emily Sun](http://www.emilywsun.com))'
+          + '![stech](/assets/techs/stech_mock.png)',
+    color: '#22cde7'
+  },
   {
     name: 'BriskIT',
     image: '/assets/techs/briskit.jpg',
@@ -158,40 +170,40 @@ var techs = [
     image: '/assets/techs/02.jpg',
     desc: 'Strata is a novel scalable 2D barcode design. In this project we try to explore the way people interact with barcodes. '
           + 'When scanning Strata barcode, instead of the all-or-nothing behavior of traditional QR Code, user could now get different layers of information based on their distance between the scanning device and the barcode.'
-          + '\n\nThis project is a collaborative work with [MSRA](http://research.microsoft.com/en-us/labs/asia/) and [Yale University](http://www.yale.edu) and is accepted to [ACM MobiCom 2014](http://www.sigmobile.org/mobicom/2014/).'
+          + '\n\nThis project is a collaborative work with [MSRA](http://research.microsoft.com/en-us/labs/asia/) and Yale University and is accepted to [ACM MobiCom 2014](http://www.sigmobile.org/mobicom/2014/).'
           + '\n\n[Read Paper](/assets/strata.pdf)',
     color: '#e88822'
   },
-  {
-    name: 'FYI: Find Your Instructor',
-    type: 'Web app design and development',
-    role: 'Designer, front-end developer (Node.js, MongoDB, Python)',
-    image: '/assets/techs/00.jpg',
-    desc: 'FYI is a website providing information of professors and schools for CS undergrads who want to apply for graduate schools in the US. This is a side project I made with classmates when I was at Peking University.'
-          + '\n\nThe website is powered by Node.js + MongoDB. Professor data are crawled from sources including university websites, wikipedia and their personal webistes.'
-          + '\n\nPoster for the project demo day:'
-          + '![Poster](/assets/techs/fyi_poster.png)',
-    color: '#22cde7'
-  },
-  {
-    name: 'TeamGO',
-    type: 'Mobile app design',
-    role: 'Lead visual designer, interaction designer',
-    image: '/assets/techs/03.jpg',
-    desc: 'TeamGo is a popular mobile app in Peking University which enables students to team up and hang out with new friends.'
-          + ' The initial UI was very complicated. I redesigned the entire interface to make it more intuitive.'
-          + '\n\n[Download the App](http://theteamgo.com/)'
-          + '![Screenshot1](/assets/techs/teamgo_0.png)'
-          + '![Screenshot1](/assets/techs/teamgo_1.png)',
-    color: '#31b48e'
-  },
+  // {
+  //   name: 'FYI: Find Your Instructor',
+  //   type: 'Web app design and development',
+  //   role: 'Designer, front-end developer (Node.js, MongoDB, Python)',
+  //   image: '/assets/techs/00.jpg',
+  //   desc: 'FYI is a website providing information of professors and schools for CS undergrads who want to apply for graduate schools in the US. This is a side project I made with classmates when I was at Peking University.'
+  //         + '\n\nThe website is powered by Node.js + MongoDB. Professor data are crawled from sources including university websites, wikipedia and their personal webistes.'
+  //         + '\n\nPoster for the project demo day:'
+  //         + '![Poster](/assets/techs/fyi_poster.png)',
+  //   color: '#22cde7'
+  // },
+  // {
+  //   name: 'TeamGO',
+  //   type: 'Mobile app design',
+  //   role: 'Lead visual designer, interaction designer',
+  //   image: '/assets/techs/03.jpg',
+  //   desc: 'TeamGo is a popular mobile app in Peking University which enables students to team up and hang out with new friends.'
+  //         + ' The initial UI was very complicated. I redesigned the entire interface to make it more intuitive.'
+  //         + '\n\n[Download the App](http://theteamgo.com/)'
+  //         + '![Screenshot1](/assets/techs/teamgo_0.png)'
+  //         + '![Screenshot1](/assets/techs/teamgo_1.png)',
+  //   color: '#31b48e'
+  // },
   {
     name: 'T-shirt Design',
     type: 'Visual design',
     role: 'Illustrator, designer',
     image: '/assets/techs/05.jpg',
-    desc: 'During my undergrad years at Peking University, I have designed a couple T-shirts for thousands of students, and was lucky enough to see them being worn everywhere in the campus.'
-          + '\n\n2014 Graduation T-shirt for the school of EECS: If you try to compile the code in the drawing, it actually turns out like [THIS](/assets/techs/grad_14.html). This little "Bye PKU and Hello World" surprise I made has moved thousands of graduates and the T-shirt once went really popular on social networks.'
+    desc: 'During my undergrad years at Peking University, I have designed a couple T-shirts for thousands of students, and was really lucky to see them being worn everywhere in the campus.'
+          + '\n\n2014 Graduation T-shirt for the school of EECS: If you try to compile the code in the drawing, it turns out like [this](/assets/techs/grad_14.html). This little "Bye PKU and Hello World" surprise I made has moved thousands of graduates and the T-shirt once went really popular on social networks.'
           + '![Screenshot1](/assets/techs/grad_14.jpg)'
           + '\n\n2013 Graduation T-shirt for the school of EECS: Over 300 students wore this for their graduation photo.'
           + '![Screenshot1](/assets/techs/grad_13.jpg)'
@@ -203,7 +215,7 @@ var techs = [
   },
   {
     name: 'CS Classics',
-    type: 'Programming',
+    type: 'Hardcore CS programming',
     role: 'Individual project (C, C++, Java, Verilog, Assembly)',
     image: '/assets/techs/04.jpg',
     desc: 'I am very proud to be the only CS student in the department who has actually hand-coded a processor, part of an operating system and a compiler. '
@@ -217,8 +229,8 @@ var techs = [
     type: '(Old fashioned) Web development',
     role: 'Individual project (HTML, CSS, ASP)',
     image: '/assets/techs/06.jpg',
-    desc: 'I made my first homepage flylinda.com from scratch when I was 12. That little site provided free tutorials for web designers and charged services as well so that I could afford the server rent myself. Flylinda.com once reached a daily IP of 2000.'
-          + ' Sadly I failed to keep the domain and most of the source code. The only thing I have now is a couple screenshots (and really precious memory).'
+    desc: 'I made my first homepage flylinda.com from scratch when I was 12. That little site provided free tutorials for web designers and charged services as well so that I could afford the server rent myself. Flylinda.com once reached a daily visit of 2000.'
+          + ' Sadly I failed to keep the domain and most of the source code. Only thing I have now is a couple screenshots (and precious memory).'
           + '![Screenshot1](/assets/techs/old_hp_0.png)'
           + '![Screenshot1](/assets/techs/old_hp_1.png)',
     color: '#9468bf'

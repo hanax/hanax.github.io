@@ -6,8 +6,7 @@
 
 body
   font-size 16px
-  font-family Lato, sans-serif
-  //min-width 1000px
+  font-family Avenir, Lato, sans-serif
   color rgb(60,60,60)
   background-color #fff
   @media screen and (max-width: 900px)
@@ -31,17 +30,17 @@ a
 .overlay-logo
   img
     size 100%
-  width 90px
-  height 90px
+  width 80px
+  height 80px
   background-color rgba(0,0,0,1)
   transition background .5s
   &:after
     content ''
-    width 90px
-    height 90px
+    width 78px
+    height 78px
     background url('/assets/logo_b.png') 0% 0% repeat-x
-    top 0
-    left 0
+    top 1px
+    left 1px
     position absolute
     display inline-block
     z-index -100
@@ -65,7 +64,7 @@ a
   left 50%
   transform translateX(-50%)
   top 150px
-  z-index -1000
+  z-index -200
   @media screen and (max-width: 900px)
     display block
   @media screen and (min-width: 900px)
@@ -76,14 +75,12 @@ a
   font-weight 300
   margin-top 40px
   font-size 12px
-  letter-spacing 2px
+  letter-spacing 1px
   .item
     -webkit-filter grayscale(100%)
     &:hover
-      font-weight 400
       -webkit-filter grayscale(0%)
     &.active, &:hover
-      font-weight 400
       -webkit-filter grayscale(0%)
       .icon-filled
         display inline
@@ -143,6 +140,7 @@ a
       .icon-heart
         opacity 1
         transform translateX(0)
+
 #arts
   clearfix()
   @media screen and (max-width: 900px)
@@ -151,12 +149,15 @@ a
     .image
       position relative
       float left
-      width 50%
+      width 25%
       background-size cover
-      background-position center
+      background-position top
+      border 2px solid #fff
       -webkit-filter grayscale(100%)
       transition all 0.5s ease
       @media screen and (max-width: 900px)
+        width 50%
+        border 0 solid #fff
         -webkit-filter grayscale(0%)
       &:hover
         -webkit-filter grayscale(0%)
@@ -168,25 +169,29 @@ a
       size 100%
       cursor zoom-out
       img
-        width 700px
+        height 80%
+        width auto
         @media screen and (max-width: 900px)
           width 100%
+          height auto
         absolute top 50% left 50%
         transform translate(-50%, -50%)
   .fashion
     font-family Roboto Condensed, sans-serif
     float left
-    width 100%
-    height 400px
+    width 50%
+    // height 300px
     background-image url('/assets/arts/f.jpg')
     background-size cover
     background-position center
     padding-left 40px
     @media screen and (max-width: 900px)
       -webkit-filter grayscale(0%)
+      width 100%
       height 300px
     @media screen and (min-width: 900px)
       -webkit-filter grayscale(100%)
+      border 2px solid #fff
     -webkit-filter grayscale(100%)
     display -webkit-box
     -webkit-box-align center
@@ -194,10 +199,10 @@ a
     &:hover
       -webkit-filter grayscale(0%)
       h1
-        text-shadow 4px 0px #323232
+        text-shadow 2px 0px #323232
     h1
       color #FF65AF
-      font-size 80px
+      font-size 40px
       margin 0
       letter-spacing 1.5px
       transition all 0.3s ease
@@ -213,7 +218,7 @@ a
     overflow hidden
     float left
     width 100%
-    height 450px
+    height 300px
     background-size cover
     display -webkit-box
     -webkit-box-align center
@@ -223,14 +228,17 @@ a
       height 300px
     @media screen and (min-width: 900px)
       -webkit-filter grayscale(100%)
+      border-top 2px solid #fff
+      border-left 2px solid #fff
+      border-bottom 2px solid #fff
     transition all 0.3s ease
     &:hover
       -webkit-filter grayscale(0%)
       cursor zoom-in
       h1
-        text-shadow 4px 0px #323232
+        text-shadow 2px 0px #323232
     h1
-      font-size 80px
+      font-size 50px
       margin 0
       color #fff
       letter-spacing 5px
@@ -254,26 +262,26 @@ a
     text-align justify
     padding 0 40px
     font-weight 400
-    font-size 18px
-    letter-spacing 0.8px
+    font-size 14px
+    // letter-spacing 0.2px
     overflow hidden
     float left
     width 100%
     height 0
     cursor zoom-out
     .content
-      padding 40px 0
+      padding 30px 0
       .tags
         font-style italic
         color rgb(100,100,100)
-        margin-bottom 25px
+        margin-bottom 15px
       .type
         display block
         padding 0 10px
         border-left 4px solid #000 
       .role
         display block
-        margin-top 20px
+        margin-top 10px
         padding 0 10px
         border-left 4px solid #000 
       p
@@ -285,12 +293,12 @@ a
         size 100%
         margin 20px 0
       .blocks
-        margin-top 25px
-        font-size 20px
+        margin-top 15px
+        font-size 16px
       .block-mock
         display block
         overflow auto
-        margin-bottom 20px
+        margin-bottom 10px
         &:nth-child(odd)
           .pic
             size 50%
@@ -304,7 +312,7 @@ a
         .text
           float left
           width 45%
-          padding-top 5%
+          padding-top 10%
           text-align center
           @media screen and (max-width: 900px)
             width 40%
@@ -325,11 +333,10 @@ a
   .avatar
     @media screen and (max-width: 900px)
       display none
-    width 180px
-    height 180px
+    width 120px
+    height 120px
     background-image url("/assets/avatar.jpg")
     background-size cover
-    //border-radius 90px
     margin-right 40px
     float left
   .right    
@@ -339,7 +346,7 @@ a
       text-align center
       letter-spacing 2px
     .title
-      font-size 32px
+      font-size 28px
     .btn
       display block
       width 150px
@@ -350,7 +357,7 @@ a
       padding 6px 8px
       margin-top 20px
       letter-spacing 4px
-      font-size 15px
+      font-size 14px
       transition all 0.3s ease
       @media screen and (max-width: 900px)
         width 100%
@@ -372,7 +379,7 @@ a
     padding-top 20px
     padding-bottom 60px
     padding-right 20px
-    font-size 18px
+    font-size 14px
     @media screen and (max-width: 900px)
       padding-top 0
       padding-left 10px

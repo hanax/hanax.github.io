@@ -10,7 +10,10 @@ $(() => {
     document.querySelectorAll('.art .image'), 
     (el) => { el.style.height = getComputedStyle(el)['width'] }
   );
-
+  Array.prototype.forEach.call(
+    document.querySelectorAll('.fashion'), 
+    (el) => { el.style.height = 0.5 * parseInt(getComputedStyle(el)['width']) + 'px' }
+  );
 
   var artOffset = my$('#arts').offsetTop;
   var techOffset = my$('#techs').offsetTop;
@@ -37,6 +40,8 @@ $(() => {
       my$('.overlay-logo').classList.remove('active');
     }
   });
+
+  // removing jquery half way done...
 
   const $arts = $('#arts');
   $arts
@@ -70,16 +75,17 @@ $(() => {
         $(this).closest('.tech').find('.desc-card').animate({'height':'0'}, 'fast');
       }
     })
-    .on('click', '.desc-card', function() {
+    .on('click', '.desc-card', function(e) {
+      if (e.target.tagName != 'A') {
+        // Scroll back to the top of the card
+        var cur_off = $(this).closest('.tech').find('.image').offset().top;
+        $('html, body').animate({
+          scrollTop: cur_off
+        }, 500);
 
-      // Scroll back to the top of the card
-      var cur_off = $(this).closest('.tech').find('.image').offset().top;
-      $('html, body').animate({
-        scrollTop: cur_off
-      }, 500);
-
-      $(this).animate({'height':'0'}, 'fast');
-      $(this).closest('.tech').find('.image').removeClass('small');
+        $(this).animate({'height':'0'}, 'fast');
+        $(this).closest('.tech').find('.image').removeClass('small');
+      }
     });
 
 

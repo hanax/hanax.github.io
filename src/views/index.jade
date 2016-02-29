@@ -9,13 +9,13 @@ html
     meta(name='description' content='Hannah Xue portfolio')
     meta(name='keywords' content='Hannah Xue, Yiqing Xue, 薛易清')
 
-    meta(prefix="og: http://ogp.me/ns#" property="og:url" content="https://hanax.co")
-    meta(prefix="og: http://ogp.me/ns#" property="og:type" content="website")
-    meta(prefix="og: http://ogp.me/ns#" property="og:site_name" content="Hannah Xue portfolio")
-    meta(prefix="og: http://ogp.me/ns#" property="og:title" content="Hannah Xue")
-    meta(prefix="og: http://ogp.me/ns#" property="og:description" content="Hannah Xue portfolio")
-    meta(prefix="og: http://ogp.me/ns#" property="og:image" content="https://hanax.co/assets/sns_pic.png")
-    meta(prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US")
+    meta(property="og:url" content="http://hanax.co")
+    meta(property="og:type" content="website")
+    meta(property="og:site_name" content="Hannah Xue portfolio")
+    meta(property="og:title" content="Hannah Xue")
+    meta(property="og:description" content="Hannah Xue portfolio")
+    meta(property="og:image" content="http://hanax.co/assets/sns_pic.png")
+    meta(property="og:locale" content="en_US")
 
     link(rel='stylesheet' href='//brick.a.ssl.fastly.net/Lato:300,300i,400,400i,700')
     link(rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto+Condensed:300')
@@ -36,7 +36,7 @@ html
           .item#art
             span.icon-triangle.icon
             span.icon-triangle-f.icon-filled
-            span Art
+            span Drawings
         a(href='#techs')
           .item#tech
             span.icon-square.icon
@@ -58,10 +58,14 @@ html
     #arts
       each a in arts
         .art
-          .image(style='background-image: url(#{a.image})')
-          .image-fullscreen
-            img(src='#{a.image}')
-      a(href='http://issuu.com/hanaxue/docs/sketch-book' target='_blank')
+          if a.link
+            a(href=a.link)
+              .image(style='background-image: url(#{a.image})')
+          else
+            .image(style='background-image: url(#{a.image})')
+            .image-fullscreen
+              img(src='#{a.image}')
+      a(href='http://issuu.com/hanaxue/docs/sketch-book')
         .fashion
           h1 Fashion Sketchbook
 
@@ -91,14 +95,15 @@ html
         a(href=('/assets/Hannah_Xue_Resume.pdf'))
           .btn Resume
       .desc
-        p Hannah is a(an):
+        p Hannah is a(n):
         ul
           li.square Engineer. She makes stuff. 
-          li.triangle Designer. She started drawing when she was really little and has been a freelance illustrator and designer for years.
-          li.triangle Amateur psychology lover. In fact she holds B.S. in CS and Psychology, but is really bad at the latter.
+          li.triangle Designer. Barely. She has been trying for years though.
+          li.triangle Amateur psychology lover. In fact she holds B.S. in both CS and Psychology, but is usually better at the former.
           li.triangle Indie music maniac. Especially Post-Rock and Brit-Pop. Bands she loves include Pink Floyd, Mono and Kraftwerk.
-          li.triangle Martial art expert. She is a national certificated Tai-chi athlete (Yep).
+          li.triangle Martial art pro. She is a national certificated Tai-chi athlete (Yep).
           li.triangle New New Yorker.
+
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
