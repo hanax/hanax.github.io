@@ -1,2 +1,2 @@
-## Portfolio site of Hannah Xue
+## Hannah Xue Portfolio
 http://hanax.co
