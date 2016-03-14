@@ -45,11 +45,11 @@ var arts = [
     image: '/assets/arts/10.jpg'
   },
   {
-    link: 'http://hanax.github.io/p5js_demos/demo_wp',
+    link: 'http://hanax.github.io/p5js-demos/demo_wp',
     image: '/assets/arts/pollock.jpg'
   },
   {
-    link: 'http://hanax.github.io/p5js_demos/demo_mouse',
+    link: 'http://hanax.github.io/p5js-demos/demo_mouse',
     image: '/assets/arts/heart.jpg'
   },
 ];
