@@ -54,16 +54,22 @@ var arts = [
   },
 ];
 
+// TODO: 
+// - Add Illuminate
+// - Add p5.js demos
+// - Maybe add WYMWYAC
+// - Add webrecorder works
+
 var techs = [
   {
     name: 'Freelance dev+design work',
     type: 'Web design and development',
     role: 'Developer, designer',
     image: '/assets/techs/web_freelance.jpg',
-    desc: 'I designed and made websites for professors and labs in Cornell Tech as a paid part-time job.'
+    desc: 'I designed and made websites for professors and labs in Cornell Tech as a part-time job.'
           + '\n\n [Prof Mor Naaman\'s homepage](http://mornaaman.com)'
           + '![mor](/assets/techs/mor_mock.png)'
-          + '(not-so-)fun fact: I made nine designs for the websites and ended up with the simplest one:'
+          + 'Designs I made before converging to the final decision:'
           + '![mor](/assets/techs/mor_mock_extra.png)'
           + '\n\n [Website for Social Technology Lab](http://stech.nyc) (made with Huai-Che Lu and [Emily Sun](http://www.emilywsun.com))'
           + '![stech](/assets/techs/stech_mock.png)',
