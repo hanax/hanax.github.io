@@ -5,36 +5,21 @@ var arts = [
     name: 'Old portfolio page banner pic',
     image: '/assets/arts/00.jpg',
   },
-  {
-    name: 'stage curtain for Live For Life',
-    image: '/assets/arts/01.jpg',
-  },
+  // {
+  //   name: 'stage curtain for Live For Life',
+  //   image: '/assets/arts/01.jpg',
+  // },
   {
     name: 'EECS postcard winter collection',
     image: '/assets/arts/02.jpg',
   },
   {
-    name: 'A recreation of Peking University library',
-    image: '/assets/arts/04.jpg',
-  },
-  {
-    name: 'Illustration explorations',
-    image: '/assets/arts/animals_0.jpg',
-  },
-  {
-    name: 'Illustration explorations',
-    image: '/assets/arts/animals_1.jpg',
-  },
-  {
-    name: 'Illustration explorations',
-    image: '/assets/arts/animals_2.jpg',
-  },
-  {
-    image: '/assets/arts/13.jpg',
-  },
-  {
     image: '/assets/arts/07.jpg'
   },
+  // {
+  //   name: 'A recreation of Peking University library',
+  //   image: '/assets/arts/04.jpg',
+  // },
   {
     image: '/assets/arts/08.jpg'
   },
@@ -43,6 +28,39 @@ var arts = [
   },
   {
     image: '/assets/arts/10.jpg'
+  },
+  {
+    image: '/assets/arts/13.jpg',
+  },
+  {
+    link: 'http://issuu.com/hanaxue/docs/sketch-book',
+    image: '/assets/arts/f.jpg'
+  },
+  {
+    name: 'Illustration explorations',
+    image: '/assets/arts/animals_0.jpg',
+  },
+  {
+    name: 'Illustration explorations',
+    image: '/assets/arts/animals_2.jpg',
+  },
+  {
+    name: 'Illustration explorations',
+    link: 'http://codepen.io/hanax/pen/GpWPxd',
+    image: '/assets/arts/animals_1.jpg',
+  },
+  {
+    name: 'Illustration explorations',
+    link: 'http://codepen.io/hanax/pen/yYMxNw',
+    image: '/assets/arts/animals_3.jpg',
+  },
+  {
+    link: 'http://hanax.co/poem/',
+    image: '/assets/arts/poem.png'
+  },
+  {
+    link: 'http://hanax.github.io/p5js-demos/demo_music_viz',
+    image: '/assets/arts/music.png'
   },
   {
     link: 'http://hanax.github.io/p5js-demos/demo_wp',
@@ -55,12 +73,21 @@ var arts = [
 ];
 
 // TODO: 
-// - Add Illuminate
-// - Add p5.js demos
+// - Maybe add airbnb work
 // - Maybe add WYMWYAC
 // - Add webrecorder works
 
 var techs = [
+  {
+    name: 'Illuminate',
+    type: 'App UI/UX design',
+    role: 'Designer',
+    image: '/assets/techs/illuminate.jpg',
+    desc: 'This is a collaborative work with Melina Diaconis. In this project we explored how people involve with tech in art spaces.'
+          + '\n\n Illuminate is designed to inspire people to explore and make art piece collections inside a museum. We are inspired by the MoMA booklets, which help tourists to fully immerse in the art by encouraging them to use personal emotion and imagination.'
+          + '\n\n [Live demo](https://projects.invisionapp.com/share/NF73T9DHW)',
+    color: '#472E96'
+  },
   {
     name: 'Freelance dev+design work',
     type: 'Web design and development',
@@ -108,18 +135,18 @@ var techs = [
     image: '/assets/techs/01.jpg',
     type: 'Mobile web app design and development',
     role: 'Individual project (Node.js, MongoDB, Python)',
-    desc: 'Shake It is a gesture based tinder style coupon recommendation web app.',
+    desc: 'Shake It is a tinder style app for coupons.',
     blocks: [
       {
         image: '/assets/techs/shakeit_0.png',
         desc: 'Simply shake your phone to get latest coupons!'
-              + '\n\nAll the recommendations are customized using collaborative filtering based on user actions.'
+              + '\n\nAll the recommendations are customized with collaborative filtering.'
       },
       {
         image: '/assets/techs/shakeit_1.png',
         desc: 'For every coupon you get, swipe left/right to ignore/star it.'
               + '\n\nSharing to social networks is (of course) supported.'
-              + '\n\nEvery action counts. The system can therefore give better recommendations.'
+              + '\n\nEvery action counts. The system therefore gives better recommendations.'
       },
       {
         image: '/assets/techs/shakeit_2.png',
@@ -219,17 +246,17 @@ var techs = [
           + '![Screenshot1](/assets/techs/shanghai.jpg)',
     color: '#3bc3cf'
   },
-  {
-    name: 'CS Classics',
-    type: 'Hardcore CS programming',
-    role: 'Individual project (C, C++, Java, Verilog, Assembly)',
-    image: '/assets/techs/04.jpg',
-    desc: 'I am very proud to be the only CS student in the department who has actually hand-coded a processor, part of an operating system and a compiler. '
-          + '\n\nFor the processor, I implemented a multi-cycle [UniCore](http://mprc.pku.edu.cn/eng/index.html) processor with pipelining in Verilog.'
-          + '\n\nFor the operating system, JOS is a teaching operating system used in [MIT CS 6.828](http://pdos.csail.mit.edu/6.828/2011/index.html). It has a basic framework of a UNIX-like operating system in C and I have to write all the core functions myself including virtual memory, multiprocessing, interruption and system call, etc.'
-          + '\n\nFor the complier, the course is from [UCLA CS 132](http://web.cs.ucla.edu/~palsberg/course/cs132/project.html). MiniJava is a subset of Java including all the core features like different variable types, arrays, function, class and class derivation, etc. Given a grammar tree, I implemented a compiler in Java which is able to compile MiniJava code to runnable MIPS assembly.',
-    color: '#67bf99'
-  },
+  // {
+  //   name: 'CS Classics',
+  //   type: 'Hardcore CS programming',
+  //   role: 'Individual project (C, C++, Java, Verilog, Assembly)',
+  //   image: '/assets/techs/04.jpg',
+  //   desc: 'I am very proud to be the only CS student in the department who has actually hand-coded a processor, part of an operating system and a compiler. '
+  //         + '\n\nFor the processor, I implemented a multi-cycle [UniCore](http://mprc.pku.edu.cn/eng/index.html) processor with pipelining in Verilog.'
+  //         + '\n\nFor the operating system, JOS is a teaching operating system used in [MIT CS 6.828](http://pdos.csail.mit.edu/6.828/2011/index.html). It has a basic framework of a UNIX-like operating system in C and I have to write all the core functions myself including virtual memory, multiprocessing, interruption and system call, etc.'
+  //         + '\n\nFor the complier, the course is from [UCLA CS 132](http://web.cs.ucla.edu/~palsberg/course/cs132/project.html). MiniJava is a subset of Java including all the core features like different variable types, arrays, function, class and class derivation, etc. Given a grammar tree, I implemented a compiler in Java which is able to compile MiniJava code to runnable MIPS assembly.',
+  //   color: '#67bf99'
+  // },
   {
     name: 'Old homepage from 2005',
     type: '(Old fashioned) Web development',

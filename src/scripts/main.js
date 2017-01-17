@@ -10,32 +10,32 @@ $(() => {
     document.querySelectorAll('.art .image'), 
     (el) => { el.style.height = getComputedStyle(el)['width'] }
   );
-  Array.prototype.forEach.call(
-    document.querySelectorAll('.fashion'), 
-    (el) => { el.style.height = 0.5 * parseInt(getComputedStyle(el)['width']) + 'px' }
-  );
+  // Array.prototype.forEach.call(
+  //   document.querySelectorAll('.fashion'), 
+  //   (el) => { el.style.height = 0.5 * parseInt(getComputedStyle(el)['width']) + 'px' }
+  // );
 
-  var artOffset = my$('#arts').offsetTop;
-  var techOffset = my$('#techs').offsetTop;
+  // var artOffset = my$('#arts').offsetTop;
+  // var techOffset = my$('#techs').offsetTop;
 
   window.addEventListener('scroll', () => {
     var aboutOffset = my$('#about').offsetTop;
 
-    if ( document.body.scrollTop >= techOffset
-      && document.body.scrollTop < aboutOffset ) {
-      my$('.item#art').classList.remove('active');
-      my$('.item#tech').classList.add('active');
-    } else if ( document.body.scrollTop >= artOffset
-      && document.body.scrollTop < techOffset ) {
-      my$('.item#art').classList.add('active');
-      my$('.item#tech').classList.remove('active');
-    }
+    // if ( document.body.scrollTop >= techOffset
+    //   && document.body.scrollTop < aboutOffset ) {
+    //   my$('.item#art').classList.remove('active');
+    //   my$('.item#tech').classList.add('active');
+    // } else if ( document.body.scrollTop >= artOffset
+    //   && document.body.scrollTop < techOffset ) {
+    //   my$('.item#art').classList.add('active');
+    //   my$('.item#tech').classList.remove('active');
+    // }
 
     if (document.body.scrollTop == document.body.clientHeight - window.innerHeight
       || document.body.scrollTop >= aboutOffset) {
       my$('.overlay-logo').classList.add('active');
-      my$('.item#art').classList.remove('active');
-      my$('.item#tech').classList.remove('active');
+      // my$('.item#art').classList.remove('active');
+      // my$('.item#tech').classList.remove('active');
     } else {
       my$('.overlay-logo').classList.remove('active');
     }

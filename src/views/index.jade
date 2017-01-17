@@ -31,17 +31,17 @@ html
       //- .icon-logo
       .overlay-logo
         img(src="/assets/logo_i.png")
-      .navi
-        a(href='#arts')
-          .item#art
-            span.icon-triangle.icon
-            span.icon-triangle-f.icon-filled
-            span Drawings
-        a(href='#techs')
-          .item#tech
-            span.icon-square.icon
-            span.icon-square-f.icon-filled
-            span Tech + Design
+      //- .navi
+      //-   a(href='#arts')
+      //-     .item#art
+      //-       span.icon-triangle.icon
+      //-       span.icon-triangle-f.icon-filled
+      //-       span Drawings + Art
+      //-   a(href='#techs')
+      //-     .item#tech
+      //-       span.icon-square.icon
+      //-       span.icon-square-f.icon-filled
+      //-       span Tech + Design
 
       .contact
         ul: each l in links
@@ -49,8 +49,6 @@ html
         a(href='#about')
           p.about-hx
             span About Hannah Xue  
-            a(href='//scottcheng.com')
-              span.icon-heart
 
     .top
       .icon-logo
@@ -60,14 +58,14 @@ html
         .art
           if a.link
             a(href=a.link)
-              .image(style='background-image: url(#{a.image})')
+              .image.image-link(style='background-image: url(#{a.image})')
           else
             .image(style='background-image: url(#{a.image})')
             .image-fullscreen
               img(src='#{a.image}')
-      a(href='http://issuu.com/hanaxue/docs/sketch-book')
-        .fashion
-          h1 Fashion Sketchbook
+      //- a(href='http://issuu.com/hanaxue/docs/sketch-book')
+      //-   .fashion
+      //-     h1 Fashion Sketchbook
 
 
     #techs
@@ -97,12 +95,12 @@ html
       .desc
         p Hannah is a(n):
         ul
-          li.square Engineer. She makes stuff. 
+          li.square Engineer. She makes stuff.
           li.triangle Designer. Still trying.
-          li.triangle Amateur psychology lover. In fact she holds B.S. in both CS and Psychology, but is usually better at the former.
-          li.triangle Indie music maniac. Especially Post-Rock and Brit-Pop. Bands she loves include Pink Floyd, Mono and Kraftwerk.
+          li.triangle Amateur psychologist. In fact she holds B.S. in both CS and Psychology, but is usually better at the former.
+          li.triangle Art and indie music lover. Spent way too much on lives and exhibitions.
           li.triangle Martial art pro. She is a national certificated Tai-chi athlete (Yep).
-          li.triangle New New Yorker.
+          li.triangle New Yorker at heart.
 
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
