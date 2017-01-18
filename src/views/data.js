@@ -59,15 +59,15 @@ var arts = [
     image: '/assets/arts/poem.png'
   },
   {
-    link: 'http://hanax.github.io/p5js-demos/demo_music_viz',
+    link: 'http://hanax.co/p5js-demos/demo_music_viz',
     image: '/assets/arts/music.png'
   },
   {
-    link: 'http://hanax.github.io/p5js-demos/demo_wp',
+    link: 'http://hanax.co/p5js-demos/demo_wp',
     image: '/assets/arts/pollock.jpg'
   },
   {
-    link: 'http://hanax.github.io/p5js-demos/demo_mouse',
+    link: 'http://hanax.co/p5js-demos/demo_mouse',
     image: '/assets/arts/heart.jpg'
   },
 ];
