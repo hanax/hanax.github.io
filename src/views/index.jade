@@ -22,6 +22,7 @@ html
 
     link(rel='shortcut icon' href='/assets/favicon.png')
 
+    script(src='//use.fontawesome.com/9d6ff586b5.js')
     script(src='//code.jquery.com/jquery-2.1.4.min.js')
     script(src='/main.js')
 
@@ -31,21 +32,10 @@ html
       //- .icon-logo
       .overlay-logo
         img(src="/assets/logo_i.png")
-      //- .navi
-      //-   a(href='#arts')
-      //-     .item#art
-      //-       span.icon-triangle.icon
-      //-       span.icon-triangle-f.icon-filled
-      //-       span Drawings + Art
-      //-   a(href='#techs')
-      //-     .item#tech
-      //-       span.icon-square.icon
-      //-       span.icon-square-f.icon-filled
-      //-       span Tech + Design
 
       .contact
         ul: each l in links
-          li: a(class=l.name href=l.url): span.icon(class='icon-#{l.name}')
+          a(class=l.name href=l.url): li: span.icon(class='fa #{l.icon}')
         a(href='#about')
           p.about-hx
             span About Hannah Xue  
@@ -95,10 +85,12 @@ html
       .desc
         p Hannah is a(n):
         ul
-          li.square Engineer. She makes stuff.
-          li.triangle Designer. Still trying.
+          li.triangle Engineer. She makes stuff.
+          li.triangle Designer. Working on it.
           li.triangle Amateur psychologist. In fact she holds B.S. in both CS and Psychology, but is usually better at the former.
-          li.triangle Art and indie music lover. Spent way too much on lives and exhibitions.
+          li.triangle
+            span Art and indie music lover. She also writes an 
+            a(href='//medium.com/@hanaxue') art blog
           li.triangle Martial art pro. She is a national certificated Tai-chi athlete (Yep).
           li.triangle New Yorker at heart.
 

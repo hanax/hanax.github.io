@@ -99,7 +99,8 @@ var techs = [
           + 'Designs I made before converging to the final decision:'
           + '![mor](/assets/techs/mor_mock_extra.png)'
           + '\n\n [Website for Social Technology Lab](http://stech.nyc) (made with Huai-Che Lu and [Emily Sun](http://www.emilywsun.com))'
-          + '![stech](/assets/techs/stech_mock.png)',
+          + '![stech](/assets/techs/stech_mock.png)'
+          + 'I am also the web master for CSCW\'18, for which I designed and developed [the website](http://cscw.acm.org/2018/).',
     color: '#22cde7'
   },
   {
@@ -130,31 +131,31 @@ var techs = [
     ],
     color: '#30c0cc'
   },
-  {
-    name: 'Shake It',
-    image: '/assets/techs/01.jpg',
-    type: 'Mobile web app design and development',
-    role: 'Individual project (Node.js, MongoDB, Python)',
-    desc: 'Shake It is a tinder style app for coupons.',
-    blocks: [
-      {
-        image: '/assets/techs/shakeit_0.png',
-        desc: 'Simply shake your phone to get latest coupons!'
-              + '\n\nAll the recommendations are customized with collaborative filtering.'
-      },
-      {
-        image: '/assets/techs/shakeit_1.png',
-        desc: 'For every coupon you get, swipe left/right to ignore/star it.'
-              + '\n\nSharing to social networks is (of course) supported.'
-              + '\n\nEvery action counts. The system therefore gives better recommendations.'
-      },
-      {
-        image: '/assets/techs/shakeit_2.png',
-        desc: 'View, order and share your coupons.'
-      }
-    ],
-    color: '#22b2e7'
-  },
+  // {
+  //   name: 'Shake It',
+  //   image: '/assets/techs/01.jpg',
+  //   type: 'Mobile web app design and development',
+  //   role: 'Individual project (Node.js, MongoDB, Python)',
+  //   desc: 'Shake It is a tinder style app for coupons.',
+  //   blocks: [
+  //     {
+  //       image: '/assets/techs/shakeit_0.png',
+  //       desc: 'Simply shake your phone to get latest coupons!'
+  //             + '\n\nAll the recommendations are customized with collaborative filtering.'
+  //     },
+  //     {
+  //       image: '/assets/techs/shakeit_1.png',
+  //       desc: 'For every coupon you get, swipe left/right to ignore/star it.'
+  //             + '\n\nSharing to social networks is (of course) supported.'
+  //             + '\n\nEvery action counts. The system therefore gives better recommendations.'
+  //     },
+  //     {
+  //       image: '/assets/techs/shakeit_2.png',
+  //       desc: 'View, order and share your coupons.'
+  //     }
+  //   ],
+  //   color: '#22b2e7'
+  // },
   {
     name: 'Strolp',
     image: '/assets/techs/strolp.jpg',
@@ -279,22 +280,27 @@ var links = [
   {
     name: 'linkedin',
     url: 'https://www.linkedin.com/pub/hannah-xue/83/ba/6a5',
+    icon: 'fa-linkedin'
   },
-  // {
-  //   name: 'facebook',
-  //   url: 'https://www.facebook.com/yqing.xue',
-  // },
   {
     name: 'instagram',
     url: 'https://instagram.com/hanaxue',
+    icon: 'fa-instagram'
   },
   {
     name: 'github',
     url: 'https://github.com/hanax',
+    icon: 'fa-github-alt'
+  },
+  {
+    name: 'medium',
+    url: 'https://medium.com/@hanaxue/',
+    icon: 'fa-medium'
   },
   {
     name: 'email',
     url: 'mailto:alfalfa.xue@gmail.com',
+    icon: 'fa-envelope-o'
   },
 ];
 

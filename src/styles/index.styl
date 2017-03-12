@@ -1,5 +1,4 @@
 @import 'nib'
-@import './iconfont.css'
 
 *
   box-sizing border-box
@@ -17,9 +16,12 @@ body
 a
   text-decoration none
   outline 0
-  color rgb(60,60,60)
+  color rgb(150,150,150)
+  transition all 0.3s ease
   &, &:active, &:focus
     outline none
+  &:hover
+    color rgb(60,60,60)
 
 @-webkit-keyframes MOVE-BG
   0%
@@ -49,7 +51,10 @@ a
     background-color rgba(0,0,0,0)
 
 .icon-logo
-  font-size 90px
+  width 90px
+  height 90px
+  background url('/assets/logo.svg') 0% 0% repeat-x
+  background-size 90px 90px
   
 .left
   fixed top 50% left 150px
@@ -107,40 +112,28 @@ a
   ul
     list-style-type none
     padding-left 0
+    margin-bottom 15px
   li
     display inline
-    margin-right 20px
-    padding-left 0
+    padding 20px 20px 20px 0
   a
     color rgb(60,60,60)
-  
+      
   .icon
     transition all 0.3s ease
-    
-  .icon-linkedin:hover
-    color #0077B5
-  .icon-facebook:hover
-    color #3B5998
-  .icon-instagram:hover
-    color #3F729B
-  .icon-github:hover
-    color #4183C4
-  .icon-email:hover
-    color #FF6586
- 
-  .icon-heart
-    opacity 0
-    margin-left 5px
-    transform translateX(-5px)
-    transition all 0.3s ease
-    &:hover
+  
+  a:hover
+    .fa-linkedin
+      color #0077B5
+    .fa-instagram
+      color #3F729B
+    .fa-medium
+      color #00AB6C
+    .fa-github-alt
+      color #4183C4
+    .fa-envelope-o
       color #FF6586
-  .about-hx
-    &:hover
-      .icon-heart
-        opacity 1
-        transform translateX(0)
-
+ 
 #arts
   clearfix()
   @media screen and (max-width: 900px)
@@ -357,6 +350,7 @@ a
       border-style solid
       border-width 2px
       border-color rgb(60,60,60)
+      color rgb(60,60,60)
       text-align center
       padding 6px 8px
       margin-top 20px
