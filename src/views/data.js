@@ -70,14 +70,39 @@ var arts = [
     link: 'http://hanax.co/p5js-demos/demo_mouse',
     image: '/assets/arts/heart.jpg'
   },
+  {
+    link: 'http://hanax.co/card-game-concentration/',
+    image: '/assets/arts/concentration.png'
+  },
+  {
+    link: 'https://github.com/hanax/roy-musical-landscape',
+    image: '/assets/arts/roy.png'
+  },
+  {
+    link: 'http://hanax.co/make-a-snowflake/',
+    image: '/assets/arts/snowflake.png'
+  },
+  {
+    link: 'https://github.com/hanax/whatyouvemissedwhenyouarecoding',
+    image: '/assets/arts/wyvmwyac.png'
+  },
 ];
 
 // TODO: 
 // - Maybe add airbnb work
-// - Maybe add WYMWYAC
 // - Add webrecorder works
 
 var techs = [
+  {
+    name: 'Symbiote',
+    type: 'Behavioral Science research -> Product development',
+    role: 'Researcher, developer',
+    image: '/assets/techs/symbiote.png',
+    desc: 'Symbiote is an ongoing research turned startup project which I have been working on throughout the past 1.5 years. We aim to connect drivers with their cars to build a safer and more trustworthy future of autonomous driving.'
+          + '\n\n Read about Symbiote on Cornell Tech press: [Trusting Autonomous Cars: How Much Is Too Much?](https://tech.cornell.edu/news/trusting-autonomous-cars-how-much-is-too-much)'
+          + '\n\n This is a collaboration work with Zaid Haque and Noshin Nisa. Read more about the project and latest updates on the [website](http://symbiote.link)',
+    color: '#141414'
+  },
   {
     name: 'Illuminate',
     type: 'App UI/UX design',
@@ -85,7 +110,7 @@ var techs = [
     image: '/assets/techs/illuminate.jpg',
     desc: 'This is a collaborative work with Melina Diaconis. In this project we explored how people involve with tech in art spaces.'
           + '\n\n Illuminate is designed to inspire people to explore and make art piece collections inside a museum. We are inspired by the MoMA booklets, which help tourists to fully immerse in the art by encouraging them to use personal emotion and imagination.'
-          + '\n\n [Live demo](https://projects.invisionapp.com/share/NF73T9DHW)',
+          + '\n\n [invision Demo](https://projects.invisionapp.com/share/NF73T9DHW)',
     color: '#472E96'
   },
   {
