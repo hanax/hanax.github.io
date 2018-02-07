@@ -1,54 +1,66 @@
 var marked = require('marked');
 
 var arts = [
-  {
-    name: 'Old portfolio page banner pic',
-    image: '/assets/arts/00.jpg',
-  },
+  // {
+  //   name: 'Old portfolio page banner pic',
+  //   image: '/assets/arts/00.jpg',
+  // },
   // {
   //   name: 'stage curtain for Live For Life',
   //   image: '/assets/arts/01.jpg',
   // },
-  {
-    name: 'EECS postcard winter collection',
-    image: '/assets/arts/02.jpg',
-  },
-  {
-    image: '/assets/arts/07.jpg'
-  },
+  // {
+  //   name: 'EECS postcard winter collection',
+  //   image: '/assets/arts/02.jpg',
+  // },
+  // {
+  //   image: '/assets/arts/07.jpg'
+  // },
   // {
   //   name: 'A recreation of Peking University library',
   //   image: '/assets/arts/04.jpg',
   // },
+  // {
+  //   image: '/assets/arts/08.jpg'
+  // },
   {
-    image: '/assets/arts/08.jpg'
+    image: '/assets/arts/the_river_flows_fast.jpg'
+  },
+  {
+    image: '/assets/arts/west_end_boys.jpg'
+  },
+  {
+    image: '/assets/arts/metropolis.jpg'
+  },
+  {
+    image: '/assets/arts/belling.jpg'
   },
   {
     image: '/assets/arts/09.jpg'
   },
   {
-    image: '/assets/arts/10.jpg'
+    image: '/assets/arts/11.jpg'
   },
-  {
-    image: '/assets/arts/13.jpg',
-  },
+  // {
+  //   image: '/assets/arts/13.jpg',
+  // },
   {
     link: 'http://issuu.com/hanaxue/docs/sketch-book',
     image: '/assets/arts/f.jpg'
   },
-  {
-    name: 'Illustration explorations',
-    image: '/assets/arts/animals_0.jpg',
-  },
-  {
-    name: 'Illustration explorations',
-    image: '/assets/arts/animals_2.jpg',
-  },
-  {
-    name: 'Illustration explorations',
-    link: 'http://codepen.io/hanax/pen/GpWPxd',
-    image: '/assets/arts/animals_1.jpg',
-  },
+  // {
+  //   name: 'Illustration explorations',
+  //   image: '/assets/arts/animals_0.jpg',
+  // },
+  // {
+  //   name: 'Illustration explorations',
+  //   image: '/assets/arts/animals_2.jpg',
+  // },
+  // {
+  //   name: 'Illustration explorations',
+  //   link: 'http://codepen.io/hanax/pen/GpWPxd',
+  //   image: '/assets/arts/animals_1.jpg',
+  // },
   {
     name: 'Illustration explorations',
     link: 'http://codepen.io/hanax/pen/yYMxNw',
@@ -110,7 +122,7 @@ var techs = [
     image: '/assets/techs/illuminate.jpg',
     desc: 'This is a collaborative work with Melina Diaconis. In this project we explored how people involve with tech in art spaces.'
           + '\n\n Illuminate is designed to inspire people to explore and make art piece collections inside a museum. We are inspired by the MoMA booklets, which help tourists to fully immerse in the art by encouraging them to use personal emotion and imagination.'
-          + '\n\n [invision Demo](https://projects.invisionapp.com/share/NF73T9DHW)',
+          + '\n\n [InVision Demo](https://projects.invisionapp.com/share/NF73T9DHW)',
     color: '#472E96'
   },
   {
@@ -128,34 +140,34 @@ var techs = [
           + 'I am also the web master for CSCW\'18, for which I designed and developed [the website](http://cscw.acm.org/2018/).',
     color: '#22cde7'
   },
-  {
-    name: 'BriskIT',
-    image: '/assets/techs/briskit.jpg',
-    type: 'Web app design and development',
-    role: 'Web developer (React), designer',
-    desc: 'BriskIT comes with an iOS app that allows users to get IT help whenever and wherever their tech breaks down. On the supporter side they could use the website to provide live support.'
-          + '\n\n[Project Git Repository](https://github.com/hanax/BriskIT)'
-          + '\n\n[Live Demo](https://briskit.herokuapp.com)',
-    blocks: [
-      {
-        image: '/assets/techs/briskit_0.png',
-        desc: 'The web app is designed for IT helpers. Simply sign up your account and get quick money by fixing IT issues.'
-      },
-      {
-        image: '/assets/techs/briskit_1.png',
-        desc: 'Browse and filter the ticket by tags, and easily find the one best fit your skillset.'
-      },
-      {
-        image: '/assets/techs/briskit_2.png',
-        desc: 'Get the ticket and just start chatting!'
-      },
-      {
-        image: '/assets/techs/briskit_ios_app.png',
-        desc: 'On the corresponding iOS app, you can send a ticket about your IT issues and just sit and wait for your help to come.'
-      }
-    ],
-    color: '#30c0cc'
-  },
+  // {
+  //   name: 'BriskIT',
+  //   image: '/assets/techs/briskit.jpg',
+  //   type: 'Web app design and development',
+  //   role: 'Web developer (React), designer',
+  //   desc: 'BriskIT comes with an iOS app that allows users to get IT help whenever and wherever their tech breaks down. On the supporter side they could use the website to provide live support.'
+  //         + '\n\n[Project Git Repository](https://github.com/hanax/BriskIT)'
+  //         + '\n\n[Live Demo](https://briskit.herokuapp.com)',
+  //   blocks: [
+  //     {
+  //       image: '/assets/techs/briskit_0.png',
+  //       desc: 'The web app is designed for IT helpers. Simply sign up your account and get quick money by fixing IT issues.'
+  //     },
+  //     {
+  //       image: '/assets/techs/briskit_1.png',
+  //       desc: 'Browse and filter the ticket by tags, and easily find the one best fit your skillset.'
+  //     },
+  //     {
+  //       image: '/assets/techs/briskit_2.png',
+  //       desc: 'Get the ticket and just start chatting!'
+  //     },
+  //     {
+  //       image: '/assets/techs/briskit_ios_app.png',
+  //       desc: 'On the corresponding iOS app, you can send a ticket about your IT issues and just sit and wait for your help to come.'
+  //     }
+  //   ],
+  //   color: '#30c0cc'
+  // },
   // {
   //   name: 'Shake It',
   //   image: '/assets/techs/01.jpg',
@@ -181,47 +193,47 @@ var techs = [
   //   ],
   //   color: '#22b2e7'
   // },
-  {
-    name: 'Strolp',
-    image: '/assets/techs/strolp.jpg',
-    type: 'Web app design and development',
-    role: 'Front-end developer (Meteor.js), designer',
-    desc: ''
-          + '\n\nStrolp consists of a web interface for stores and an iOS app for users. The entire application with fully functional front-end and back-end is developed within 36 hours for Big Red Hackathon.'
-          + '\n\nProject description credit to my teammate Shreyas Kulkarni.'
-          + '\n\n[Learn more about the App](http://devpost.com/software/strolp-bnco6t/)'
-          + '\n\n[Project Git Repository](https://github.com/redenter/Big-Red-Hacks/)',
-    blocks: [
-      {
-        image: '/assets/techs/strolp_0.png',
-        desc: 'Strolp tries to combine the best of both e-shopping and physical shopping and tries to strike a sweet balance which could be win-win for all the people involved.'
-      },
-      {
-        image: '/assets/techs/strolp_1.png',
-        desc: 'The shopper discovers the deals nearby on the go.'
-      },
-      {
-        image: '/assets/techs/strolp_2.png',
-        desc: 'The shopper can claim a deal. As soon as there are enough number of people to avail the deal, a notification is sent to the shopper to visit the shop and make the purchase.'
-      },
-      {
-        image: '/assets/techs/strolp_3.png',
-        desc: 'On the retailer side, they can add branches and deals for each branch. With Strolp, they offer the best possible discounts when people visit them in numbers.'
-      },
-      {
-        image: '/assets/techs/strolp_4.png',
-        desc: 'Strolp also tries to optimize the deals for the retailers using our algorithm which generates dynamic deals based on various factors like demographics of the region etc.'
-      },
-      {
-        image: '/assets/techs/strolp_news.jpg',
-        desc: 'A photo of me presenting the demo is featured on Cornell News! We actually received some really good feedbacks:'
-              + '\n\n \"Strolp is the most complete app in the entire hackathon.\"'
-              + '\n\n \"I wish I could use it now.\"'
-              + '\n\n \"Just love the logo!\"'
-      }
-    ],
-    color: '#e89a1e'
-  },
+  // {
+  //   name: 'Strolp',
+  //   image: '/assets/techs/strolp.jpg',
+  //   type: 'Web app design and development',
+  //   role: 'Front-end developer (Meteor.js), designer',
+  //   desc: ''
+  //         + '\n\nStrolp consists of a web interface for stores and an iOS app for users. The entire application with fully functional front-end and back-end is developed within 36 hours for Big Red Hackathon.'
+  //         + '\n\nProject description credit to my teammate Shreyas Kulkarni.'
+  //         + '\n\n[Learn more about the App](http://devpost.com/software/strolp-bnco6t/)'
+  //         + '\n\n[Project Git Repository](https://github.com/redenter/Big-Red-Hacks/)',
+  //   blocks: [
+  //     {
+  //       image: '/assets/techs/strolp_0.png',
+  //       desc: 'Strolp tries to combine the best of both e-shopping and physical shopping and tries to strike a sweet balance which could be win-win for all the people involved.'
+  //     },
+  //     {
+  //       image: '/assets/techs/strolp_1.png',
+  //       desc: 'The shopper discovers the deals nearby on the go.'
+  //     },
+  //     {
+  //       image: '/assets/techs/strolp_2.png',
+  //       desc: 'The shopper can claim a deal. As soon as there are enough number of people to avail the deal, a notification is sent to the shopper to visit the shop and make the purchase.'
+  //     },
+  //     {
+  //       image: '/assets/techs/strolp_3.png',
+  //       desc: 'On the retailer side, they can add branches and deals for each branch. With Strolp, they offer the best possible discounts when people visit them in numbers.'
+  //     },
+  //     {
+  //       image: '/assets/techs/strolp_4.png',
+  //       desc: 'Strolp also tries to optimize the deals for the retailers using our algorithm which generates dynamic deals based on various factors like demographics of the region etc.'
+  //     },
+  //     {
+  //       image: '/assets/techs/strolp_news.jpg',
+  //       desc: 'A photo of me presenting the demo is featured on Cornell News! We actually received some really good feedbacks:'
+  //             + '\n\n \"Strolp is the most complete app in the entire hackathon.\"'
+  //             + '\n\n \"I wish I could use it now.\"'
+  //             + '\n\n \"Just love the logo!\"'
+  //     }
+  //   ],
+  //   color: '#e89a1e'
+  // },
   {
     name: 'Strata: Scalable 2D Barcode',
     type: 'Mobile/HCI Research',
